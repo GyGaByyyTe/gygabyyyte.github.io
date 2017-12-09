@@ -23,6 +23,12 @@ a {
 .header__logo, .header__info {
     display: inline-block;
 }
+.logo-img {
+    width: 120px;
+    height: 36px;
+    background-image: url(/img/logo/logo-header.png);
+    overflow: hidden;
+}
 .header__phone {
     width: 173px;
     height: 22px;
@@ -54,6 +60,12 @@ a {
 .main__nav-elem.active {
     color: #221f1f;
 }
+.main__nav-picture {
+    width: 23px;
+    height: 18px;
+    display: inline-block;
+    overflow: hidden;
+}
 .main__nav-name {
     width: 68px;
     height: 10px;
@@ -61,6 +73,7 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2.4px;
+    display: inline-block;    
 }
 
 .main_content {
@@ -100,6 +113,7 @@ a {
     background-color: #4b73b5;
     text-align: center;
     margin: 41px auto 32px auto;
+    overflow: hidden;
 }
 .main__card-picture {
     padding-top: 18px;
@@ -123,8 +137,13 @@ a {
 }
 .main__card-list {
     list-style-type: disc;
-    list-style-position: outside;
+    list-style-position: inside;
     text-align: left; 
+    padding-left: 0px;
+}
+.card-list__item {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .main__price {
     /* width: 73px;
@@ -148,6 +167,9 @@ a {
     border-radius: 50%;
     background-color: #fff; 
     overflow: hidden;   
+}
+.visualyhidden { 
+    transform: scale(0); 
 }
 .main__feed-content {
     width: 656px;
@@ -244,15 +266,29 @@ a {
     text-align: center;
 }
 .social__logo {
-    /* Style for "Ellipse 1" */
     width: 20px;
     height: 20px;
-    background-color: #ffffff; 
+    background-color: #d2def3;
     border-radius: 50%;   
     display: inline-block;
 }
 .social__link {
     display: block;
+}
+.social__picture {
+    width: 15px;
+    height: 13px;
+    overflow: hidden;
+    margin: 3px auto;
+    position: relative;
+}
+.social__img {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
 }
 
 
