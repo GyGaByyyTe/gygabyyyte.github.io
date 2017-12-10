@@ -68,13 +68,13 @@
     display: inline-block;
     overflow: hidden;
 }
-.nav__main {
+.nav__list-picture--main {
     background: url(/img/icons/nav_main.png) center center no-repeat;
 }
-.nav__feeds {
+.nav__list-picture--feeds {
     background: url(/img/icons/nav_feeds.png) center center no-repeat;
 }
-.nav__team {
+.nav__list-picture--team {
     background: url(/img/icons/nav_team.png) center center no-repeat;
 }
 .nav__list-name {
@@ -93,7 +93,7 @@
 }
 
 .main__banner {
-    widows: 901px;
+    width: 901px;
     height: 299px;
     overflow: hidden;
 }
@@ -308,19 +308,19 @@
     margin: 3px auto;
     background-repeat: no-repeat
 }
-.social__vkontakte {
+.social__picture--vkontakte {
     background: url(/img/icons/social_vk.png) center center no-repeat;
 }
-.social__facebook {
+.social__picture--facebook {
     background: url(/img/icons/social_fb.png) center center no-repeat;
 }
-.social__google {
+.social__picture--google {
     background: url(/img/icons/social_google.png) center center no-repeat;
 }
-.social__twitter {
+.social__picture--twitter {
     background: url(/img/icons/social_twitter.png) center center no-repeat;
 }
-.social__mail {
+.social__picture--mail {
     background: url(/img/icons/social_mail.png) center center no-repeat;
 }
 
