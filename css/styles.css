@@ -95,7 +95,7 @@
 .main__banner {
     widows: 901px;
     height: 299px;
-    background: url(/img/picture/banner.png) right center no-repeat;
+    overflow: hidden;
 }
 
 .section-title {
