@@ -277,6 +277,7 @@
     display: inline-block;
 }
 .social__link {   
+    width: 20px;    
     font-size: 0px;
     display: block;
 }
