@@ -13,23 +13,18 @@
 }
 
 .header {
-    height: 76px;
+    min-height: 76px;
     background-color: #4b73b5;
 }
 .header__logo, .header__contacts {
     display: inline-block;
 }
+
 .logo {
-    width: 120px;
-    height: 36px;
-    overflow: hidden;
+    display: inline-block;
 }
-.logo_link {
-    display: block;
-}
+
 .contacts__phone {
-    width: 173px;
-    height: 22px;
     color: #fff;
     font-size: 21px;
     font-weight: bold;
@@ -37,8 +32,6 @@
     text-decoration: none;
 }
 .contacts__work-time {
-    width: 102px;
-    height: 14px;
     color: rgba(255, 255, 255, .7);
     font-size: 14px;
     font-weight: bold;    
@@ -47,7 +40,6 @@
 
 .main__navigation {
     width: 107px;
-    height: 116px;
     display: inline-block;
 }
 .nav__list {
@@ -78,8 +70,6 @@
     background: url(/img/icons/nav_team.png) center center no-repeat;
 }
 .nav__list-name {
-    width: 68px;
-    height: 10px;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
@@ -93,9 +83,7 @@
 }
 
 .main__banner {
-    width: 901px;
-    height: 299px;
-    overflow: hidden;
+    vertical-align: top;
 }
 
 .section-title {
@@ -109,12 +97,11 @@
     list-style: none;
     display: inline-block;
 }
-.features__list-item {
-    width: 250px;
-    height: 456px;
+.features__list-item { 
+    max-width: 250px;    
     display: inline-block;
 }
-.features__list-item.best-feature {
+.features__list-item--best {
     border-radius: 5px;
     border: 1px solid #e8e9ed;
 }
@@ -136,17 +123,14 @@
     padding-top: 18px;
 }
 .feature__header {
-    width: 76px;
-    height: 11px;
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2.88px;
     margin: 10px auto;
+    text-align: center;    
 }
 .feature__body {
-    width: 188px;
-    height: 151px;
     font-size: 18px;
     font-weight: 300;
     text-align: center;
@@ -163,14 +147,17 @@
     margin-bottom: 10px;
 }
 .feature__price {
+    font-family: "Roboto Slab","Roboto",sans-serif;
     font-size: 54px;
     font-weight: 400;
     letter-spacing: -1.07px;
     text-align: center;
 }
+.feature__price::first-letter {
+    font-size: 32px;
+}
 
 .feeds__list {
-    width: 880px;
     list-style: none;
 }
 .feed {
@@ -188,12 +175,11 @@
     background-color: #fff;  
     overflow: hidden;   
 }
-.visualyhidden { 
-    transform: scale(0); 
+.hidden { 
+    visibility: hidden; 
 }
 .feed__content {
-    width: 656px;
-    height: 163px;
+    max-width: 656px;
     font-size: 18px;
     font-weight: 300;
 }
@@ -210,45 +196,50 @@
     font-weight: 300;  
 }
 
+.pages {
+    text-align: center;
+}
 .pages__title, .pages__buttons {
     display: inline-block;
+    vertical-align: middle;
 }
 .pages__title {
-    width: 103px;
-    height: 14px;
     color: #656464;
     font-size: 14px;
     font-weight: 300;
-    text-align: center;
-    margin-left: 270px;
 }
+.pages__btn, .pages__list, .pages__list-item {
+    display: inline-block;
+    vertical-align: middle;
+}
+.pages__btn {
+    text-decoration: none;
+}
+
 .pages__list {
-    width: 265px;
+    margin: 0;
+    padding: 0;    
     list-style: none;
     padding-left: 0px;
-}
-.pages__list-item {
-    width: 25px;
-    height: 25px;
-    font-size: 14px;
-    font-weight: 700; 
-    text-align: center;    
-    display: inline-block;  
+    font-size: 0;
 }
 .pages__list-link {
     display: block;
+    padding: 7px 0px;
+    width: 25px;    
+    font-size: 14px;
+    font-weight: 700; 
+    text-align: center;     
     text-decoration: none;  
-    color: #000;         
+    color: #000;            
 }
 
 .pages__buttons {
-    width: 225px;
-    height: 25px;
     margin-left: 10px;
 }
 
 .footer {
-    height: 75px;
+    min-height: 75px;
     background-color: #4b73b5;
     color: #ffffff;
     font-family: Roboto;
@@ -257,10 +248,6 @@
 }
 .footer__author, .footer__logo, .footer__socials {
     display: inline-block;
-}
-.footer__author {
-    width: 235px;
-    height: 50px;
 }
 .author__link {
     text-decoration: none;
@@ -274,13 +261,7 @@
     font-weight: 700; 
 }  
 
-.footer__social {
-    width: 155px;
-}
-
 .social__title {
-    width: 160px;
-    height: 14px;
     font-size: 14px;
     font-weight: 700;
 }
@@ -291,8 +272,6 @@
     text-align: center;
 }
 .social__list-item {
-    width: 20px;
-    height: 20px;
     background-color: #d2def3;
     border-radius: 50%;   
     display: inline-block;
