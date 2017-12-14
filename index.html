@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
     <title>AIR Planet</title>
@@ -15,7 +16,7 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="container">
+            <div class="container clearfix">
                 <div class="header__logo">
                     <a href="/" class="logo">
                         <img src="/img/logo/logo-header.png" alt="Логотип компании" class="logo__img">
@@ -23,23 +24,19 @@
                 </div>
                 <div class="header__contacts">
                     <div class="contacts">
-                        <a href="tel:+78000039210" class="contacts__phone">
-                            8 (800) 00-392-10
-                        </a>
-                        <div class="contacts__work-time">
-                            График работы
-                        </div>
+                        <a href="tel:+78000039210" class="contacts__phone">8 (800) 00-392-10</a>
+                        <div class="contacts__work-time">График работы</div>
                     </div>
                 </div>
             </div>
         </header>
         <div class="main">
-            <div class="container">
-                <div class="main__navigation">
+            <div class="container clearfix">
+                <aside class="main__sidebar">
                     <nav class="nav">
                         <ul class="nav__list">
                             <li class="nav__list-item">
-                                <a href="/" class="nav__list-link active">
+                                <a href="/" class="nav__list-link nav__list-link--active">
                                     <div class="nav__list-picture nav__list-picture--main"></div>
                                     <div class="nav__list-name">Главная</div>
                                 </a>
@@ -58,8 +55,8 @@
                             </li>
                         </ul>
                     </nav>
-                </div>
-                <div class="main_content">
+                </aside>
+                <main class="main_content">
                     <div class="main__banner">
                         <img src="/img/picture/banner.png" alt="Баннер" class="banner-pic">
                     </div>
@@ -175,90 +172,91 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="pages">
-                                <div class="pages__title">Страница 1 из 7</div>
-                                <div class="pages__buttons">
-                                    <a class="pages__btn" href="#">&lt;</a>
-                                    <ul class="pages__list">
-                                        <li class="pages__list-item">
-                                            <a class="pages__list-link" href="#">1</a>
-                                        </li>
-                                        <li class="pages__list-item">
-                                            <a class="pages__list-link" href="#">2</a>
-                                        </li>
-                                        <li class="pages__list-item">
-                                            <a class="pages__list-link" href="#">3</a>
-                                        </li>
-                                        <li class="pages__list-item">
-                                            <a class="pages__list-link" href="#">4</a>
-                                        </li>
-                                        <li class="pages__list-item">
-                                            <a class="pages__list-link" href="#">5</a>
-                                        </li>
-                                        <li class="pages__list-item">
-                                            <a class="pages__list-link" href="#">6</a>
-                                        </li>
-                                        <li class="pages__list-item">
-                                            <a class="pages__list-link" href="#">7</a>
-                                        </li>
-                                    </ul>
-                                    <a class="pages__btn" href="#">&gt;</a>
-                                </div>
-                            </div>                        
+                        <div class="pagination">
+                            <div class="pagination__title">Страница 1 из 7</div>
+                            <div class="pagination__buttons">
+                                <a class="pagination__buttons-nav pagination__buttons-nav--disabled" href="#">&lt;</a>
+                                <ul class="pagination__list">
+                                    <li class="pagination__list-item">
+                                        <a class="pagination__list-link" href="#">1</a>
+                                    </li>
+                                    <li class="pagination__list-item">
+                                        <a class="pagination__list-link" href="#">2</a>
+                                    </li>
+                                    <li class="pagination__list-item">
+                                        <a class="pagination__list-link" href="#">3</a>
+                                    </li>
+                                    <li class="pagination__list-item">
+                                        <a class="pagination__list-link" href="#">4</a>
+                                    </li>
+                                    <li class="pagination__list-item">
+                                        <a class="pagination__list-link" href="#">5</a>
+                                    </li>
+                                    <li class="pagination__list-item">
+                                        <a class="pagination__list-link" href="#">6</a>
+                                    </li>
+                                    <li class="pagination__list-item">
+                                        <a class="pagination__list-link" href="#">7</a>
+                                    </li>
+                                </ul>
+                                <a class="pagination__buttons-nav" href="#">&gt;</a>
+                            </div>
+                        </div>
                     </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__author">
+                <div class="author">
+                    Сделано с любовью и старанием на курсе «HTML + CSS» в
+                    <a href="https://loftschool.com" class="author__link">
+                        <span class="author__loftschool">LoftSchool</span>
+                    </a>. Автор работы:
+                    <span class="author__name">Лебедев Андрей</span>
+                </div>
+            </div>
+            <div class="footer__logo">
+                <a href="/" class="logo">
+                    <img src="/img/logo/logo-header.png" alt="Логотип компании" class="logo__img">
+                </a>
+            </div>
+            <div class="footer__socials">
+                <div class="social">
+                    <div class="social__title ">Наши социальные сети</div>
+                    <ul class="social__list">
+                        <li class="social__list-item">
+                            <a class="social__link" href="#">
+                                <div class="social__picture social__picture--vkontakte">Vkontakte</div>
+                            </a>
+                        </li>
+                        <li class="social__list-item">
+                            <a class="social__link" href="#">
+                                <div class="social__picture social__picture--facebook">Facebook</div>
+                            </a>
+                        </li>
+                        <li class="social__list-item">
+                            <a class="social__link" href="#">
+                                <div class="social__picture social__picture--google">Google+</div>
+                            </a>
+                        </li>
+                        <li class="social__list-item">
+                            <a class="social__link" href="#">
+                                <div class="social__picture social__picture--twitter">Twitter</div>
+                            </a>
+                        </li>
+                        <li class="social__list-item">
+                            <a class="social__link" href="#">
+                                <div class="social__picture social__picture--mail">E-mail</div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <footer class="footer ">
-            <div class="container ">
-                <div class="footer__author">
-                    <div class="author">
-                        Сделано с любовью и старанием на курсе «HTML + CSS» в
-                        <a href="https://loftschool.com" class="author__link">
-                            <span class="author__loftschool">LoftSchool</span>
-                        </a>. Автор работы:
-                        <span class="author__name">Лебедев Андрей</span>
-                    </div>
-                </div>
-                <div class="footer__logo">
-                    <a href="/" class="logo">
-                        <img src="/img/logo/logo-header.png" alt="Логотип компании" class="logo__img">
-                    </a>
-                </div>
-                <div class="footer__socials">
-                    <div class="social">
-                        <div class="social__title ">Наши социальные сети</div>
-                        <ul class="social__list">
-                            <li class="social__list-item">
-                                <a class="social__link" href="#">
-                                    <div class="social__picture social__picture--vkontakte">Vkontakte</div>
-                                </a>
-                            </li>
-                            <li class="social__list-item">
-                                <a class="social__link" href="#">
-                                    <div class="social__picture social__picture--facebook">Facebook</div>
-                                </a>
-                            </li>
-                            <li class="social__list-item">
-                                <a class="social__link" href="#">
-                                    <div class="social__picture social__picture--google">Google+</div>
-                                </a>
-                            </li>
-                            <li class="social__list-item">
-                                <a class="social__link" href="#">
-                                    <div class="social__picture social__picture--twitter">Twitter</div>
-                                </a>
-                            </li>
-                            <li class="social__list-item">
-                                <a class="social__link" href="#">
-                                    <div class="social__picture social__picture--mail">E-mail</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    </footer>
 </body>
 
 </html>
