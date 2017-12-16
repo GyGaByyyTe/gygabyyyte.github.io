@@ -1,0 +1,20 @@
+.features {
+    margin-top: -38px;
+    margin-bottom: 51px;
+}
+.features__list {
+    position: relative;
+}
+.features__title {
+    margin-left: -5px;
+    margin-bottom: 26px;    
+}
+.features__list-item { 
+    max-width: 250px;    
+    margin: 1px 20px 0 0;
+    float: left;
+}
+.features__list-item--best {
+    border-radius: 5px;
+    border: 1px solid #e8e9ed;
+}

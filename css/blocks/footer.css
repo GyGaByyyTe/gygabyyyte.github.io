@@ -1,0 +1,18 @@
+.footer {
+    height: 80px;
+    background-color: #4b73b5;   
+    margin-top: -80px;        
+}
+.footer__left, .footer__center, .footer__right {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300; 
+    color: #ffffff;     
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
+}
+.footer__center {
+    padding-left: 127px;
+    padding-top: 22px;
+}

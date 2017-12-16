@@ -1,0 +1,20 @@
+.header {
+    min-height: 76px;
+    background-color: #4b73b5;
+    margin-bottom: 13px;	
+}
+.header__left, .header__right {
+    width: 50%;
+    float: left;
+    box-sizing: border-box; 
+}
+.header__left {
+    margin-top: 20px;
+    padding-left: 21px;
+}
+.header__right {
+    text-align: right;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    padding-right: 20px;    
+}

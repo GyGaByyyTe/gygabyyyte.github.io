@@ -1,0 +1,17 @@
+.author {
+    padding-left: 20px;
+    padding-top: 14px;
+    padding-right: 110px;
+    line-height: 18px;
+}
+.author__link {
+    text-decoration: none;
+}
+.author__loftschool {
+    font-weight: 700;
+    text-decoration: underline;
+    color: #fff;
+}
+.author__name {
+    font-weight: 700; 
+} 

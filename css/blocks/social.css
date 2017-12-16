@@ -1,0 +1,47 @@
+
+.social {
+    text-align: right;
+    padding-top: 19px;
+    padding-right: 9px;
+}
+.social__title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.social__list {
+    padding-right: 11px;
+}
+.social__list-item {
+    background-color: #d2def3;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 4px 0 3px;
+}
+.social__link {   
+    width: 20px;    
+    font-size: 0px;
+    display: block;
+}
+.social__picture {
+    width: 15px;
+    height: 13px;
+    overflow: hidden;
+    margin: 3px auto;
+    background-repeat: no-repeat
+}
+.social__picture--vkontakte {
+    background: url(/img/icons/social_vk.png) center center no-repeat;
+}
+.social__picture--facebook {
+    background: url(/img/icons/social_fb.png) center center no-repeat;
+}
+.social__picture--google {
+    background: url(/img/icons/social_google.png) center center no-repeat;
+}
+.social__picture--twitter {
+    background: url(/img/icons/social_twitter.png) center center no-repeat;
+}
+.social__picture--mail {
+    background: url(/img/icons/social_mail.png) center center no-repeat;
+}

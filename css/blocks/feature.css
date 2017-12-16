@@ -1,0 +1,56 @@
+.feature {
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+.feature__logo {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: #4b73b5;
+    text-align: center;
+    margin: 41px auto 35px auto;
+    overflow: hidden;
+}
+.feature__picture {
+    padding-top: 18px;
+}
+.feature__header {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.88px;
+    margin-top: 10px;
+    margin-bottom: 17px;
+    text-align: center;    
+}
+.feature__body {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 26px;    
+    margin-bottom: 22px;    
+}
+.feature__desc {
+    line-height: 30px;
+}
+.feature__list {
+    list-style-type: disc;
+    margin-left: 18px;
+    text-align: left; 
+}
+.feature__list-item {
+    margin-top: 10px;
+    margin-bottom: 14px;
+    padding-left: 9px;
+}
+.feature__price {
+    font-family: "Roboto Slab","Roboto",sans-serif;
+    font-size: 54px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 38px;
+}
+.feature__price::first-letter {
+    font-size: 32px;
+}

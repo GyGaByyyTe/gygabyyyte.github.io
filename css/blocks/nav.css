@@ -1,0 +1,44 @@
+.nav {
+    margin-top: 28px;
+    margin-left: 18px;
+}
+.nav__list-item {
+    margin-bottom: 26px;
+}
+
+.nav__list-link {
+    display: block;
+    color: #4b73b5;
+    text-decoration: none;      
+}
+.nav__list-link.active {
+    color: #221f1f;
+}
+.nav__list-picture {
+    width: 23px;
+    height: 18px;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    overflow: hidden;
+    margin-top: 4px;	
+}
+.nav__list-picture--main {
+    background: url(/img/icons/nav_main.png) center center no-repeat;
+}
+.nav__list-picture--feeds {
+    background: url(/img/icons/nav_feeds.png) center center no-repeat;
+}
+.nav__list-picture--team {
+    background: url(/img/icons/nav_team.png) center center no-repeat;
+}
+.nav__list-name {
+    margin-left: 11px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 6px;         
+}
