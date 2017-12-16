@@ -60,6 +60,7 @@ ul {
 .header__contacts {
     text-align: right;
     margin-top: 17px;
+    margin-bottom: 17px;
     padding-right: 20px;    
 }
 
@@ -86,6 +87,9 @@ ul {
     text-decoration: underline;
 }
 
+.main {
+    margin-bottom: 58px;
+}
 .main__sidebar {
     width: 199px;
     float: left;
@@ -96,10 +100,10 @@ ul {
     margin-top: 28px;
     margin-left: 18px;
 }
-/*.nav__list-item {
-    margin-bottom: 27px;
+.nav__list-item {
+    margin-bottom: 26px;
 }
-*/
+
 .nav__list-link {
     display: block;
     color: #4b73b5;
@@ -152,12 +156,21 @@ ul {
     font-weight: 700;
 }
 
+.features {
+    margin-top: -38px;
+    margin-bottom: 51px;
+}
 .features__list {
-    display: inline-block;
+    position: relative;
+}
+.features__title {
+    margin-left: -5px;
+    margin-bottom: 26px;    
 }
 .features__list-item { 
     max-width: 250px;    
-    display: inline-block;
+    margin: 1px 20px 0 0;
+    float: left;
 }
 .features__list-item--best {
     border-radius: 5px;
@@ -174,7 +187,7 @@ ul {
     border-radius: 50%;
     background-color: #4b73b5;
     text-align: center;
-    margin: 41px auto 32px auto;
+    margin: 41px auto 35px auto;
     overflow: hidden;
 }
 .feature__picture {
@@ -185,52 +198,69 @@ ul {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2.88px;
-    margin: 10px auto;
+    margin-top: 10px;
+    margin-bottom: 17px;
     text-align: center;    
 }
 .feature__body {
     font-size: 18px;
     font-weight: 300;
     text-align: center;
-    margin: 0 auto;
+    padding: 0 26px;    
+    margin-bottom: 22px;    
+}
+.feature__desc {
+    line-height: 30px;
 }
 .feature__list {
     list-style-type: disc;
-    list-style-position: inside;
+    margin-left: 18px;
     text-align: left; 
 }
 .feature__list-item {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
+    padding-left: 9px;
 }
 .feature__price {
     font-family: "Roboto Slab","Roboto",sans-serif;
     font-size: 54px;
     font-weight: 400;
-    letter-spacing: -1.07px;
     text-align: center;
+    margin-bottom: 38px;
 }
 .feature__price::first-letter {
     font-size: 32px;
+}
+
+.feeds__title {
+    margin-bottom: 68px;
+}
+.feeds__list-item {
+    margin-bottom: 29px;
 }
 
 .feed {
     text-decoration: none;
     display: block;
     color: black;
+    border-bottom: 2px solid #f5f5f5;
+    padding-bottom: 19px;
 }
 .feed__logo, .feed__content {
     display: inline-block;
+    vertical-align: top;
 }
 .feed__logo {
     width: 160px;
     height: 160px;
     border-radius: 50%;
     background-color: #fff;  
-    overflow: hidden;   
+    overflow: hidden;  
+    margin-right: 14px; 
 }
 .feed__content {
-    max-width: 656px;
+    width: 656px;
     font-size: 18px;
     font-weight: 300;
 }
@@ -238,17 +268,20 @@ ul {
     color: #656464;
     font-size: 14px;
     font-weight: 300;
+    margin-bottom: 7px;
 }
 .feed__title {
     font-weight: 700;
+    margin-bottom: 9px;    
 }
 .feed__desc {
     text-align: justify;    
     font-weight: 300;  
+    line-height: 30px;
 }
 
 .pagination {
-    text-align: center;
+    margin-left: 271px;    
 }
 .pagination__title, .pagination__buttons {
     display: inline-block;
@@ -258,6 +291,7 @@ ul {
     color: #656464;
     font-size: 14px;
     font-weight: 300;
+    margin-right: 10px;
 }
 .pagination__buttons-nav, .pagination__list, .pagination__list-item {
     display: inline-block;
@@ -265,6 +299,8 @@ ul {
 }
 .pagination__buttons-nav {
     text-decoration: none;
+    margin-left: 5px;
+    margin-right: 8px;
 }
 .pagination__buttons-nav--disabled {
     color: #ccc
@@ -274,16 +310,17 @@ ul {
 }
 .pagination__list-link {
     display: block;
-    padding: 7px 0px;
+    padding: 6px 0px;
     width: 25px;    
     font-size: 14px;
     font-weight: 700; 
     text-align: center;     
     text-decoration: none;  
+    border-radius: 5px;    
     color: #000;            
 }
 .pagination__list-link--active {
-    background: #b24930;
+    background: #4b73b5;
     color: #fff;
 }
 
@@ -297,9 +334,16 @@ ul {
     font-size: 14px;
     font-weight: 300; 
     color: #ffffff;     
-    display: inline-block;
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
 }
-
+.author {
+    padding-left: 20px;
+    padding-top: 14px;
+    padding-right: 110px;
+    line-height: 18px;
+}
 .author__link {
     text-decoration: none;
 }
@@ -312,17 +356,30 @@ ul {
     font-weight: 700; 
 }  
 
+.footer__logo {
+    padding-left: 127px;
+    padding-top: 22px;
+}
+
+.social {
+    text-align: right;
+    padding-top: 19px;
+    padding-right: 9px;
+}
 .social__title {
     font-size: 14px;
     font-weight: 700;
+    margin-bottom: 7px;
 }
+
 .social__list {
-    text-align: center;
+    padding-right: 11px;
 }
 .social__list-item {
     background-color: #d2def3;
-    border-radius: 50%;   
+    border-radius: 50%;
     display: inline-block;
+    margin: 0px 4px 0 3px;
 }
 .social__link {   
     width: 20px;    
