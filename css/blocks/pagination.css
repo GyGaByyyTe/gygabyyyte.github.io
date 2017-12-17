@@ -1,5 +1,10 @@
 .pagination {
+    padding-top: 0;
+    margin-top: 0;
     margin-left: 271px;    
+}
+.pagination--comments {
+    margin-left: 220px;    
 }
 .pagination__title, .pagination__buttons {
     display: inline-block;
@@ -29,7 +34,7 @@
 .pagination__list-link {
     display: block;
     padding: 5px 0px;
-    width: 25px;    
+    width: 26px;    
     font-size: 14px;
     font-weight: 700; 
     text-align: center;     
@@ -37,7 +42,13 @@
     border-radius: 5px;    
     color: #000;            
 }
+.pagination__list-link:hover {
+    color: #497ccf;
+}
 .pagination__list-link--active {
     background: #4b73b5;
     color: #fff;
+}
+.pagination__list-link--active:hover {
+    color: #d2def3;
 }

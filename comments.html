@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/comments.css">
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
     <title>AIR Planet</title>
 </head>
@@ -35,10 +35,10 @@
                 <aside class="main__sidebar">
                     <nav class="nav">
                         <ul class="nav__list">
-                            <li class="nav__list-item nav__list-link--active">
+                            <li class="nav__list-item">
                                 <a href="/" class="nav__list-link nav__list-link--main">Главная</a>
                             </li>
-                            <li class="nav__list-item">
+                            <li class="nav__list-item nav__list-link--active">
                                 <a href="/comments.html" class="nav__list-link nav__list-link--feeds">Отзывы</a>
                             </li>
                             <li class="nav__list-item">
@@ -48,122 +48,80 @@
                     </nav>
                 </aside>
                 <main class="main_content">
-                    <div class="main__banner">
-                        <img src="/img/picture/banner.png" alt="Баннер" class="banner-pic">
-                    </div>
-                    <section class="features">
-                        <h2 class="features__title section-title">Тарифы</h2>
-                        <ul class="features__list clearfix">
-                            <li class="features__list-item">
-                                <a href="#" class="feature">
-                                    <div class="feature__logo">
-                                        <img src="/img/icons/feature_standart.png" alt="feature_standart" class="feature__picture">
-                                    </div>
-                                    <div class="feature__content">
-                                        <div class="feature__header">стандарт</div>
-                                        <div class="feature__body">
-                                            <div class="feature__desc">Создан для вашего комфортного отдыха</div>
-                                            <ul class="feature__list">
-                                                <li class="feature__list-item">Питание включено</li>
-                                                <li class="feature__list-item">Багаж (5 кг)</li>
-                                                <li class="feature__list-item">Детское кресло</li>                                             
-                                            </ul>
-                                        </div>
-                                        <div class="feature__price">$19</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="features__list-item features__list-item--best">
-                                <a href="#" class="feature">
-                                    <div class="feature__logo">
-                                        <img src="/img/icons/feature_premium.png" alt="feature_premium" class="feature__picture">
-                                    </div>
-                                    <div class="feature__content">
-                                        <div class="feature__header">премиум</div>
-                                        <div class="feature__body">
-                                            <div class="feature__desc">Для любителей хороших впечатлений</div>
-                                            <ul class="feature__list">
-                                                <li class="feature__list-item">Питание включено</li>
-                                                <li class="feature__list-item">Багаж (5 кг)</li>
-                                                <li class="feature__list-item">Детское кресло</li>
-                                            </ul>
-                                        </div>
-                                        <div class="feature__price">$39</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="features__list-item">
-                                <a href="#" class="feature">
-                                    <div class="feature__logo">
-                                        <img src="/img/icons/feature_luxury.png" alt="feature_luxury" class="feature__picture">
-                                    </div>
-                                    <div class="feature__content">
-                                        <div class="feature__header">лакшери</div>
-                                        <div class="feature__body">
-                                            <div class="feature__desc">Всё самое лучшее и незабываемое</div>
-                                            <ul class="feature__list">
-                                                <li class="feature__list-item">Питание включено</li>
-                                                <li class="feature__list-item">Багаж (5 кг)</li>
-                                                <li class="feature__list-item">Детское кресло</li>
-                                            </ul>
-                                        </div>
-                                        <div class="feature__price">$99</div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a href="/" class="breadcrumbs__item-link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__item-link breadcrumbs__item-link_active">Отзывы</a>
+                        </li>
+                    </ul>
                     <section class="feeds">
-                        <h2 class="feeds__head-title section-title">Последние новости</h2>
-                        <ul class="feeds__list">
+                        <h1 class="feeds__head-title feeds__head-title--comments section-title">Отзывы</h1>
+                        <ul class="feeds__list feeds__list--comments">
                             <li class="feeds__list-item">
                                 <a href="#" class="feeds__wrap">
-                                    <div class="feeds__logo" style="background-image:url(/img/content/feed_item_1.jpg);background-repeat:no-repeat;">
-                                        <img src="/img/content/feed_item_1.jpg" alt="feed_item_1" class="feeds__picture hidden">
+                                    <div class="feeds__logo" style="background-image:url(/img/content/comment_avatar_1.jpg);background-repeat:no-repeat;">
+                                        <img src="/img/content/comment_avatar_1.jpg" alt="feed_item_1" class="feeds__picture hidden">
                                     </div>
                                     <div class="feeds__content">
                                         <div class="feeds__date">12.10.2016</div>
-                                        <div class="feeds__title">Ночные перелёты дешевле!</div>
-                                        <div class="feeds__desc">Ужасный полет, трясло первые полчаса так, что я боялась отстегнуть ремни. Слава Богу,
-                                            ничего не случилось, но мне даже валерьянка не помогла, так страшно было. Не
-                                            рекомендую эту компанию, лучше доплатить и лететь с комфортом.
+                                        <div class="feeds__title">Ирина Паламарчук</div>
+                                        <div class="feeds__desc">Классный полет, трясло первые полчаса так, что я боялась отстегнуть ремни. Слава
+                                            Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно было.
+                                            Рекомендую эту компанию, но лучше доплатить и лететь с комфортом.
                                         </div>
                                     </div>
                                 </a>
                             </li>
                             <li class="feeds__list-item">
                                 <a href="#" class="feeds__wrap">
-                                    <div class="feeds__logo" style="background-image:url(/img/content/feed_item_2.jpg);background-repeat:no-repeat;">
-                                        <img src="/img/content/feed_item_2.jpg" alt="feed_item_2" class="feeds__picture visualyhidden">
+                                    <div class="feeds__logo" style="background-image:url(/img/content/comment_avatar_2.jpg);background-repeat:no-repeat;">
+                                        <img src="/img/content/comment_avatar_2.jpg" alt="feed_item_2" class="feeds__picture visualyhidden">
                                     </div>
                                     <div class="feeds__content">
                                         <div class="feeds__date">01.02.2016</div>
-                                        <div class="feeds__title">Путешествие в Грузию стало доступнее</div>
+                                        <div class="feeds__title">Александр Бельков</div>
                                         <div class="feeds__desc">Все понравилось, вежливые стюардессы, вовремя убирают, напитки предлагали 2 раза,
                                             а еду – 1 раз. Единственное, что не понравилось, как то мало места для ног, но
-                                            с этим у меня часто проблема, рост 2,1м.Единственное, что не понравилось, как то мало места для ног
+                                            с этим у меня часто проблема, рост 2,1м.
                                         </div>
                                     </div>
                                 </a>
                             </li>
                             <li class="feeds__list-item">
                                 <a href="#" class="feeds__wrap">
-                                    <div class="feeds__logo" style="background-image:url(/img/content/feed_item_3.jpg);background-repeat:no-repeat;">
-                                        <img src="/img/content/feed_item_3.jpg" alt="feed_item_3" class="feeds__picture visualyhidden">
+                                    <div class="feeds__logo" style="background-image:url(/img/content/comment_avatar_3.png);background-repeat:no-repeat;">
+                                        <img src="/img/content/comment_avatar_3.png" alt="feed_item_3" class="feeds__picture visualyhidden">
                                     </div>
                                     <div class="feeds__content">
                                         <div class="feeds__date">22.12.2015</div>
-                                        <div class="feeds__title">Детские авиабилеты доступны для бизнес-класса</div>
-                                        <div class="feeds__desc">Не кормили вообще! Сказали, что это из-за того, что полет менее 2,5 часов. Но прибавьте
-                                            к этому время регистрации в аэропорту. Летел с женой и мы очень проголодались.
+                                        <div class="feeds__title">Игорь Николаенко</div>
+                                        <div class="feeds__desc">Кормили супер вообще! Сказали, что это из-за того, что полет менее 2,5 часов. Но
+                                            прибавьте к этому время регистрации в аэропорту. Летел с женой и мы очень проголодались.
                                             Просто имейте это ввиду, берите с собой хотя бы бутерброды, чипсы какие-то или
                                             печенье.
                                         </div>
                                     </div>
                                 </a>
                             </li>
+                            <li class="feeds__list-item">
+                                <a href="#" class="feeds__wrap">
+                                    <div class="feeds__logo" style="background-image:url(/img/content/comment_avatar_4.jpg);background-repeat:no-repeat;">
+                                        <img src="/img/content/comment_avatar_4.jpg" alt="feed_item_3" class="feeds__picture visualyhidden">
+                                    </div>
+                                    <div class="feeds__content">
+                                        <div class="feeds__date">14.08.2015</div>
+                                        <div class="feeds__title">Анастасия Порядная</div>
+                                        <div class="feeds__desc">За такую цену просто все отлично! Кто недоволен, платите в 2 раза больше за аналогичные
+                                            рейсы. Мне понравилось, что на борту было чисто, я аллергик и всегда чутко реагирую
+                                            на пыль. Спасибо за полет! Рекомендую!
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
-                        <div class="pagination">
+                        <div class="pagination pagination--comments">
                             <div class="pagination__title">Страница 1 из 7</div>
                             <div class="pagination__buttons">
                                 <a class="pagination__buttons-nav pagination__buttons-nav--disabled" href="#">&lt;</a>
@@ -195,6 +153,56 @@
                         </div>
                     </section>
                 </main>
+                <section class="questions">
+                    <h6 class="questions__text">
+                        Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить
+                        <a href="/" class="questions__link">заявку на сайте</a> или же позвонить по номеру круглосуточной поддержки
+                        <a href="tel:+78000039210" class="questions__phone">8 (800) 00-392-10</a>.
+                    </h6>
+                </section>
+                <section class="new-comment">
+                    <div class="new-comment__wrap">
+                        <form class="new-comment__form" action="get">
+                            <h2 class="new-comment__title section-title">Оставить отзыв</h2>
+                            <fieldset class="new-comment__name new-comment__fieldset">
+                                <label class="new-comment__label-input" for="first-name">
+                                    Ваше имя
+                                    <input class="new-comment__input-text" type="text" name="first-name" id="first-name" placeholder="Андрей">
+                                </label>
+                                <label class="new-comment__label-input" for="second-name">
+                                    Ссылка на профиль VK
+                                    <input class="new-comment__input-text" type="text" name="second-name" id="second-name" placeholder="vk.com/example">
+                                </label>
+                            </fieldset>
+                            <div class="new-comment__commentary-textarea">
+                                <label class="new-comment__label-textarea" for="text-comment">
+                                    Текст отзыва
+                                    <textarea class="new-comment__input-textarea" name="text-comment" id="text-comment" rows="5">Мне понравилось</textarea>
+                                </label>
+                            </div>
+                            <fieldset class="new-comment__buttons new-comment__fieldset">
+                                <div class="new-comment__custom">
+                                    <div class="new-comment__label-radio">Отображать фото в отзыве?</div>
+                                    <label class="new-comment__custom-radiobutton">
+                                        <input class="new-comment__custom-radio-real" type="radio" name="radio-test">
+                                        <span class="new-comment__radio-custom"></span>
+                                        <span class="new-comment__custom-label">Да</span>
+                                    </label>
+                                    <label class="new-comment__custom-radiobutton">
+                                        <input class="new-comment__custom-radio-real" type="radio" name="radio-test">
+                                        <span class="new-comment__radio-custom"></span>
+                                        <span class="new-comment__custom-label">Нет</span>
+                                    </label>
+                                </div>
+                                <div class="new-comment__simple-button">
+                                    <button class="new-comment__button-send" name="submit">
+                                        <span class="new-comment__button-send-layout">Отправить</span>
+                                    </button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </section>
             </div>
         </div>
     </div>

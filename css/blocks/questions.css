@@ -1,0 +1,25 @@
+.questions {
+    width: 1100px;
+    height: 170px;
+    background-color: #4bb56b;
+    background-image: url("/img/picture/questions_back.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 43px 230px;
+    box-sizing: border-box    
+}
+.questions__text {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.questions__link, .questions__phone  {
+    font-weight: 700;
+    color: #fff;
+}
+.questions__phone {
+    text-decoration: none;
+}

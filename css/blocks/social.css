@@ -1,7 +1,7 @@
 
 .social {
     text-align: right;
-    padding-top: 19px;
+    padding-top: 18px;
     padding-right: 9px;
 }
 .social__title {
@@ -17,6 +17,9 @@
     border-radius: 50%;
     display: inline-block;
     margin: 0px 4px 0 3px;
+}
+.social__list-item:hover {
+    background-color: #fff;
 }
 .social__link {   
     width: 20px;    
