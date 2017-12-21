@@ -4,12 +4,54 @@
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    margin-bottom: 3px;
     display: block;	
 }
 .contacts__work-time {
+    display: inline-block;
     color: rgba(255, 255, 255, .7);
     font-size: 14px;
     font-weight: bold;    
+    cursor: pointer;
+    position: relative;
+}
+.contacts__work-time-title {
     text-decoration: underline;
+}
+.contacts__dropdown {
+    box-sizing: border-box;
+    margin-top: 20px;
+    position: absolute;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #1c5bc3;
+    line-height: 21px;
+    width: 164px;
+    height: 70px;
+    padding-top: 13px;
+    padding-left: 20px;
+    top: 100%;
+    right: -9999px;
+    z-index: 10;
+    box-shadow: 3px 4px 5px rgba(23, 59, 117, 0.55);
+    opacity: 0.95;
+}
+.contacts__dropdown::before {
+    content: "";
+    display: block;
+    height: 20px;
+    top: -20px;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+.contacts__dropdown-item {
+    text-decoration: none;
+    text-align: left;
+}
+.contacts__dropdown-item--lanch {
+    color: black;
+    font-weight: 300;
+}
+.contacts__work-time:hover .contacts__dropdown {
+    right: -2px;
 }
