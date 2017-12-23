@@ -1,8 +1,8 @@
 
 .social {
     text-align: right;
-    padding-top: 18px;
-    padding-right: 9px;
+    padding-top: 6px;
+    padding-right: 7px;
 }
 .social__title {
     font-size: 14px;
@@ -22,15 +22,18 @@
     background-color: #fff;
 }
 .social__link {   
-    width: 20px;    
+    width: 20px;
+    height: 20px; 
     font-size: 0px;
     display: block;
+    box-sizing: border-box;
+    padding: 3px 2px;
 }
 .social__picture {
     width: 15px;
     height: 13px;
     overflow: hidden;
-    margin: 3px auto;
+    /* margin: 3px auto; */
     background-repeat: no-repeat
 }
 .social__picture--vkontakte {

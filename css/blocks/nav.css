@@ -1,9 +1,13 @@
 .nav {
     margin-top: 30px;
     margin-left: 22px;
+    max-width: 177px;            
 }
 .nav__list-item {
     margin-bottom: 30px;
+}
+.nav__list-item:last-child {
+    margin-bottom: 0;
 }
 .nav__list-link {
     display: block;
@@ -15,7 +19,6 @@
     text-decoration: none; 
     padding-top: 6px;         
     padding-left: 36px; 
-    max-width: 136px;        
     position: relative; 
 }
 .nav__list-link::before {
@@ -53,20 +56,11 @@
 .nav__list-link--main::before {
     background-image: url(/img/icons/nav_main.png);
 }
-/* .nav__list-link--main:hover::before {
-    background-image: url(/img/icons/nav_main_hover.png);
-} */
 .nav__list-link--feeds::before {
     width: 20px;
     background-image: url(/img/icons/nav_feeds.png);
 }
-/* .nav__list-link--feeds:hover::before {
-    background-image: url(/img/icons/nav_feeds_hover.png);
-} */
 .nav__list-link--team::before {
     width: 23px;
     background-image: url(/img/icons/nav_team.png);
 }
-/* .nav__list-link--team:hover::before {
-    background-image: url(/img/icons/nav_team_hover.png);
-} */

@@ -2,6 +2,8 @@
     text-decoration: none;
     display: block;
     color: black;
+    padding-top: 41px;
+    padding-bottom: 38px;    
 }
 .feature__logo {
     width: 68px;
@@ -9,7 +11,7 @@
     border-radius: 50%;
     background-color: #4b73b5;
     text-align: center;
-    margin: 41px auto 35px auto;
+    margin: 0 auto 35px auto;
     overflow: hidden;
 }
 .feature__picture {
@@ -49,7 +51,6 @@
     font-size: 54px;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 38px;
 }
 .feature__price::first-letter {
     font-size: 32px;

@@ -1,17 +1,21 @@
 .new-comment {
-    margin-bottom: 84px;
+    padding-top: 58px;
 }
 .new-comment__wrap {
-    margin: 61px auto;
+    margin: 0 auto;
     background-color: #f5f5f5;
     border: 1px solid #f5f5f5;
     border-radius: 5px;
     overflow: hidden;
     width: 700px;    
+    padding-bottom: 50px;
+}
+.new-comment__form {
+    padding-top: 41px;
+    padding-left: 69px;  
+    padding-bottom: 34px;      
 }
 .new-comment__title {
-    margin-top: 41px;
-    margin-left: 68px;
     margin-bottom: 0px;
 }
 .new-comment__fieldset {
@@ -20,7 +24,7 @@
     padding: 0;
 }
 .new-comment__name {
-    padding: 17px 0px 0px 68px;
+    margin-top: 15px;
 }
 .new-comment__label-input {
     color: #221f1f;
@@ -57,8 +61,7 @@
     opacity: 1;  
 }
 .new-comment__commentary-textarea {
-    margin-top: 0;
-    margin-left: 69px;
+    margin-top: 2px;
     margin-bottom: 18px;
     width: 561px;       
 }
@@ -77,13 +80,14 @@
     border-radius: 5px;    
     width: 100%;
     resize: none;
-    padding-left: 9px;
     padding-top: 7px;
+    padding-right: 12px;
+    padding-bottom: 18px;
+    padding-left: 9px;    
     box-sizing: border-box;    
 }
 .new-comment__buttons {
     margin-top: 0;
-    margin-left: 69px;
     margin-bottom: 13px;
     width: 561px;     
 }

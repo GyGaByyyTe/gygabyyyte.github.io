@@ -1,7 +1,8 @@
 .footer {
-    height: 80px;
     background-color: #4b73b5;   
-    margin-top: -80px;        
+    margin-top: -75px;      
+    padding-top: 12px;  
+    padding-bottom: 9px;
 }
 .footer__left, .footer__center, .footer__right {
     font-family: Roboto;
@@ -14,5 +15,5 @@
 }
 .footer__center {
     padding-left: 127px;
-    padding-top: 20px;
+    padding-top: 8px;
 }

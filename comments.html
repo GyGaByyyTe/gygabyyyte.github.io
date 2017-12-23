@@ -53,7 +53,7 @@
                         </ul>
                     </nav>
                 </aside>
-                <main class="main_content">
+                <main class="main__content">
                     <ul class="breadcrumbs">
                         <li class="breadcrumbs__item">
                             <a href="/" class="breadcrumbs__item-link">Главная</a>
@@ -159,57 +159,57 @@
                         </div>
                     </section>
                 </main>
-                <section class="questions">
-                    <h6 class="questions__text">
-                        Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить
-                        <a href="/" class="questions__link">заявку на сайте</a> или же позвонить по номеру круглосуточной поддержки
-                        <a href="tel:+78000039210" class="questions__phone">8 (800) 00-392-10</a>.
-                    </h6>
-                </section>
-                <section class="new-comment">
-                    <div class="new-comment__wrap">
-                        <form class="new-comment__form" action="get">
-                            <h2 class="new-comment__title section-title">Оставить отзыв</h2>
-                            <fieldset class="new-comment__name new-comment__fieldset">
-                                <label class="new-comment__label-input" for="first-name">
-                                    Ваше имя
-                                    <input class="new-comment__input-text" type="text" name="first-name" id="first-name" placeholder="Андрей">
+            </div>
+            <section class="questions container">
+                <h6 class="questions__text">
+                    Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить
+                    <a href="/" class="questions__link">заявку на сайте</a> или же позвонить по номеру круглосуточной поддержки
+                    <a href="tel:+78000039210" class="questions__phone">8 (800) 00-392-10</a>.
+                </h6>
+            </section>
+            <section class="new-comment container">
+                <div class="new-comment__wrap">
+                    <form class="new-comment__form" action="get">
+                        <h2 class="new-comment__title section-title">Оставить отзыв</h2>
+                        <fieldset class="new-comment__name new-comment__fieldset">
+                            <label class="new-comment__label-input" for="first-name">
+                                <span slass="new-comment__label-input-title">Ваше имя</span>
+                                <input class="new-comment__input-text" type="text" name="first-name" id="first-name" placeholder="Андрей">
+                            </label>
+                            <label class="new-comment__label-input" for="second-name">
+                                <span slass="new-comment__label-input-title">Ссылка на профиль VK</span>
+                                <input class="new-comment__input-text" type="text" name="second-name" id="second-name" placeholder="vk.com/example">
+                            </label>
+                        </fieldset>
+                        <div class="new-comment__commentary-textarea">
+                            <label class="new-comment__label-textarea" for="text-comment">
+                                <span slass="new-comment__label-textarea-title">Текст отзыва</span>
+                                <textarea class="new-comment__input-textarea" name="text-comment" id="text-comment" rows="4">Мне понравилось</textarea>
+                            </label>
+                        </div>
+                        <fieldset class="new-comment__buttons new-comment__fieldset">
+                            <div class="new-comment__custom">
+                                <div class="new-comment__label-radio">Отображать фото в отзыве?</div>
+                                <label class="new-comment__custom-radiobutton">
+                                    <input class="new-comment__custom-radio-real" type="radio" checked name="radio-test">
+                                    <span class="new-comment__radio-custom"></span>
+                                    <span class="new-comment__custom-label">Да</span>
                                 </label>
-                                <label class="new-comment__label-input" for="second-name">
-                                    Ссылка на профиль VK
-                                    <input class="new-comment__input-text" type="text" name="second-name" id="second-name" placeholder="vk.com/example">
-                                </label>
-                            </fieldset>
-                            <div class="new-comment__commentary-textarea">
-                                <label class="new-comment__label-textarea" for="text-comment">
-                                    Текст отзыва
-                                    <textarea class="new-comment__input-textarea" name="text-comment" id="text-comment" rows="5">Мне понравилось</textarea>
+                                <label class="new-comment__custom-radiobutton">
+                                    <input class="new-comment__custom-radio-real" type="radio" name="radio-test">
+                                    <span class="new-comment__radio-custom"></span>
+                                    <span class="new-comment__custom-label">Нет</span>
                                 </label>
                             </div>
-                            <fieldset class="new-comment__buttons new-comment__fieldset">
-                                <div class="new-comment__custom">
-                                    <div class="new-comment__label-radio">Отображать фото в отзыве?</div>
-                                    <label class="new-comment__custom-radiobutton">
-                                        <input class="new-comment__custom-radio-real" type="radio" name="radio-test">
-                                        <span class="new-comment__radio-custom"></span>
-                                        <span class="new-comment__custom-label">Да</span>
-                                    </label>
-                                    <label class="new-comment__custom-radiobutton">
-                                        <input class="new-comment__custom-radio-real" type="radio" name="radio-test">
-                                        <span class="new-comment__radio-custom"></span>
-                                        <span class="new-comment__custom-label">Нет</span>
-                                    </label>
-                                </div>
-                                <div class="new-comment__simple-button">
-                                    <button class="new-comment__button-send" name="submit">
-                                        <span class="new-comment__button-send-layout">Отправить</span>
-                                    </button>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-                </section>
-            </div>
+                            <div class="new-comment__simple-button">
+                                <button class="new-comment__button-send" name="submit">
+                                    <span class="new-comment__button-send-layout">Отправить</span>
+                                </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
         </div>
     </div>
     <footer class="footer">

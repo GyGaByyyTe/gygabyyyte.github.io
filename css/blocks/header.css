@@ -1,7 +1,7 @@
 .header {
-    min-height: 76px;
     background-color: #4b73b5;
     margin-bottom: 13px;	
+    padding-top: 17px;
 }
 .header__left, .header__right {
     width: 50%;
@@ -9,12 +9,11 @@
     box-sizing: border-box; 
 }
 .header__left {
-    margin-top: 20px;
+    padding-top: 3px;
     padding-left: 21px;
 }
 .header__right {
     text-align: right;
-    margin-top: 17px;
     margin-bottom: 16px;
     padding-right: 20px;    
 }

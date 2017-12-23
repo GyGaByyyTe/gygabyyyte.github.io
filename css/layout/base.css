@@ -29,7 +29,7 @@ ul {
 }
 .wrapper:after {
     content: "";
-    height: 80px;
+    height: 75px;
     display: block;
 }
 
@@ -50,9 +50,10 @@ ul {
     float: left;
     box-sizing: border-box;
 }
-.main_content {
+.main__content {
     width: 901px;
     float: left;
+    padding-bottom: 58px; 
 }
 .main__banner {
     vertical-align: top;
