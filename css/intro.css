@@ -57,9 +57,8 @@
     right: 17px;
     width: 17px;
     height: 18px;
-    background-image: url("/img/icons/button_blue.png"); 
+    background: url('/img/icons/css_sprites.png') -157px -10px;
     background-repeat: no-repeat;
-    background-position: center;
 
     transition: background-image .3s;
 }
@@ -68,7 +67,7 @@
     background-color: #1c5bc3;
 }
 .intro__link:hover:after{
-    background-image: url("/img/icons/button_white.png"); 
+    background: url('/img/icons/css_sprites.png') -157px -44px;
 }
 
 /*!

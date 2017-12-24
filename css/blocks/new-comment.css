@@ -187,13 +187,12 @@
 .new-comment__button-send-layout:after {
     content: "";
     position: absolute;
-    top: -3px;
-    right: 13px;
+    top: -1px;
+    right: 12px;
     width: 17px;
     height: 18px;
-    background-image: url("/img/icons/button_white.png"); 
+    background: url('/img/icons/css_sprites.png') -157px -44px;
     background-repeat: no-repeat;
-    background-position: center;
 
     transition: background-image .3s;
 }
@@ -206,5 +205,5 @@
     color: #1c5bc3;
 }
 .new-comment__button-send:hover .new-comment__button-send-layout:after{
-    background-image: url("/img/icons/button_blue.png"); 
+    background: url('/img/icons/css_sprites.png') -157px -10px;
 }
