@@ -34,7 +34,7 @@
     margin-bottom: 22px;    
 }
 .feature__desc {
-    line-height: 30px;
+    line-height: 1.7em;
 }
 .feature__list {
     list-style-type: disc;
