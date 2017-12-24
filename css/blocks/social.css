@@ -17,6 +17,8 @@
     border-radius: 50%;
     display: inline-block;
     margin: 0px 4px 0 3px;
+
+    transition: background-color .3s;
 }
 .social__list-item:hover {
     background-color: #fff;

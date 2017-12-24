@@ -47,6 +47,8 @@
     padding-top: 17px;
     position: relative;   
     box-sizing: border-box; 
+
+    transition: color .3s, background-color .3s;
 }
 .intro__link:after {
     content: "";
@@ -58,6 +60,8 @@
     background-image: url("/img/icons/button_blue.png"); 
     background-repeat: no-repeat;
     background-position: center;
+
+    transition: background-image .3s;
 }
 .intro__link:hover { 
     color: #fff;

@@ -20,6 +20,8 @@
     padding-top: 6px;         
     padding-left: 36px; 
     position: relative; 
+
+    transition: color .3s;
 }
 .nav__list-link::before {
     content: "";
@@ -55,12 +57,18 @@
 
 .nav__list-link--main::before {
     background-image: url(/img/icons/nav_main.png);
+
+    transition: background-image .3s;
 }
 .nav__list-link--feeds::before {
     width: 20px;
     background-image: url(/img/icons/nav_feeds.png);
+
+    transition: background-image .3s;
 }
 .nav__list-link--team::before {
     width: 23px;
     background-image: url(/img/icons/nav_team.png);
+
+    transition: background-image .3s;
 }

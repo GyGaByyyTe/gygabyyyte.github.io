@@ -1,5 +1,6 @@
 .new-comment {
     padding-top: 58px;
+    padding-bottom: 50px;    
 }
 .new-comment__wrap {
     margin: 0 auto;
@@ -8,7 +9,6 @@
     border-radius: 5px;
     overflow: hidden;
     width: 700px;    
-    padding-bottom: 50px;
 }
 .new-comment__form {
     padding-top: 41px;
@@ -106,14 +106,14 @@
     margin-right: 14px;
 }
 .new-comment__custom-radio-real {
-	display: none;
+    display: none;
 }
 .new-comment__radio-custom {
 	width: 20px;
 	height: 20px;
     border: 1px solid #c9c9c9;
 	border-radius: 3px;
-	position: relative;
+    position: relative;
 }
 .new-comment__radio-custom,
 .new-comment__custom-label {
@@ -123,6 +123,8 @@
     font-family: Roboto;
     font-size: 14px;
     font-weight: 300;    
+
+    transition: color .3s, border .3s;
 }
 
 .new-comment__custom-radio-real:hover + .new-comment__radio-custom {
@@ -166,6 +168,8 @@
     background-color: #4b73b5;
     border: 1px solid #4b73b5;
     border-radius: 3px;    
+
+    transition: border-color .3s, background-color .3s;
 }
 .new-comment__button-send-layout {
     display: block;
@@ -177,6 +181,8 @@
     letter-spacing: 2.4px;
     padding-right: 23px;
     position: relative;    
+
+    transition: color .3s;
 }
 .new-comment__button-send-layout:after {
     content: "";
@@ -188,6 +194,8 @@
     background-image: url("/img/icons/button_white.png"); 
     background-repeat: no-repeat;
     background-position: center;
+
+    transition: background-image .3s;
 }
 .new-comment__button-send:hover {
     cursor: pointer;
