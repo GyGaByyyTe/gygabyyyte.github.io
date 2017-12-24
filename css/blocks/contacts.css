@@ -31,6 +31,7 @@
     padding-left: 20px;
     top: 100%;
     right: -9999px;
+    /* right: -2px; */
     z-index: 10;
     box-shadow: 3px 4px 5px rgba(23, 59, 117, 0.55);
     opacity: 0.95;
@@ -40,8 +41,17 @@
     display: block;
     height: 20px;
     top: -20px;
-    left: 0;
     right: 0;
+    left: 0;
+    position: absolute;
+}
+.contacts__dropdown::after {
+    content: "";
+    border: 12px solid transparent; /* Прозрачные границы */
+    border-bottom: 12px solid white; /* Добавляем треугольник */
+    display: block;
+    top: -22px;
+    right: 3px;
     position: absolute;
 }
 .contacts__dropdown-item {
