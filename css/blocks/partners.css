@@ -1,7 +1,7 @@
 .partners__list {
-    padding-right: 15px;
-    padding-top: 39px;
-    padding-bottom: 35px;
+    margin-right: 15px;
+    margin-top: 39px;
+    margin-bottom: 35px;
     font-size: 0;
     text-align: justify;
 }
@@ -16,7 +16,7 @@
 .partners__item {
     width: 285px;
     display: inline-block;
-    padding-bottom: 64px;
+    margin-bottom: 64px;
     vertical-align: middle;
     text-align: center;
 

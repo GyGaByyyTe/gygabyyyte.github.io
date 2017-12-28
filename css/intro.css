@@ -1,6 +1,7 @@
 .intro {
     background-image: url("/img/picture/intro_back.jpg");
-
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -31,8 +32,6 @@
 .intro__link {
     margin-top: 36px;
     display: block;
-    width: 205px;
-    height: 43px;
     border: 1px solid #1c5bc4;
     border-radius: 3px;        
 
@@ -43,8 +42,10 @@
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.2em;
-    padding-right: 23px;
-    padding-top: 17px;
+    padding-right: 42px;
+    padding-top: 16px;
+    padding-left: 18px;
+    padding-bottom: 15px;
     position: relative;   
     box-sizing: border-box; 
 
@@ -53,8 +54,8 @@
 .intro__link:after {
     content: "";
     position: absolute;
-    top: 13px;
-    right: 17px;
+    top: 14px;
+    right: 16px;
     width: 17px;
     height: 18px;
     background: url('/img/icons/css_sprites.png') -157px -10px;
@@ -79,6 +80,7 @@
  */
 .animated {
     animation-duration: 1s;
+    animation-delay: 1s;
     animation-fill-mode: both;
 }
 @keyframes bounce {

@@ -1,6 +1,7 @@
 .header {
     background-color: #4b73b5;
     margin-bottom: 13px;	
+    padding-bottom: 16px;
     padding-top: 17px;
 }
 .header__left, .header__right {
@@ -14,6 +15,5 @@
 }
 .header__right {
     text-align: right;
-    margin-bottom: 16px;
     padding-right: 20px;    
 }

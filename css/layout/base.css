@@ -46,9 +46,8 @@ ul {
 }
 
 .main__sidebar {
-    width: 199px;
+    margin-right: 43px;
     float: left;
-    box-sizing: border-box;
 }
 .main__content {
     width: 901px;

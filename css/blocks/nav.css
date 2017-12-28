@@ -5,6 +5,7 @@
 }
 .nav__list-item {
     margin-bottom: 30px;
+    max-width: 120px;
 }
 .nav__list-item:last-child {
     margin-bottom: 0;
