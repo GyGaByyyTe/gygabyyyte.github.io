@@ -1,0 +1,33 @@
+.partners__list {
+    margin-right: 15px;
+    margin-top: 39px;
+    margin-bottom: 35px;
+    font-size: 0;
+    text-align: justify;
+}
+.partners__list:after{
+    width: 100%;
+    height: 0px;
+    visibility: hidden;
+    overflow: hidden;
+    content: '';
+    display: inline-block;
+  }
+.partners__item {
+    width: 285px;
+    display: inline-block;
+    margin-bottom: 64px;
+    vertical-align: middle;
+    text-align: center;
+
+}
+.partners__link {
+    display: inline-block;
+    background-color: #fff;
+    filter: grayscale(100%) opacity(52%);
+
+    transition: filter .3s;
+}
+.partners__link:hover {
+    filter: none;
+}
