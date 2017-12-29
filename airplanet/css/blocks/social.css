@@ -44,26 +44,26 @@
 }
 .social__link--vkontakte::before {
     width: 12px; height: 7px;
-    background-image: url('/img/icons/css_sprites.png');
+    background-image: url('/airplanet/img/icons/css_sprites.png');
     background-position: -10px -138px;
 }
 .social__link--facebook::before {
     width: 6px; height: 13px;
-    background-image: url('/img/icons/css_sprites.png');
+    background-image: url('/airplanet/img/icons/css_sprites.png');
     background-position:  -192px -10px;
 }
 .social__link--google::before {
     width: 15px; height: 9px;
-    background-image: url('/img/icons/css_sprites.png');
+    background-image: url('/airplanet/img/icons/css_sprites.png');
     background-position: -157px -78px;
 }
 .social__link--twitter::before {
     width: 11px; height: 9px;
-    background-image: url('/img/icons/css_sprites.png');
+    background-image: url('/airplanet/img/icons/css_sprites.png');
     background-position: -124px -100px;
 }
 .social__link--mail::before {
     width: 12px; height: 9px;
-    background-image: url('/img/icons/css_sprites.png');
+    background-image: url('/airplanet/img/icons/css_sprites.png');
     background-position: -157px -107px;
 }

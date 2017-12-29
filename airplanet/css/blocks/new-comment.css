@@ -190,7 +190,7 @@
     right: 12px;
     width: 17px;
     height: 18px;
-    background: url('/img/icons/css_sprites.png') -157px -44px;
+    background: url('/airplanet/img/icons/css_sprites.png') -157px -44px;
     background-repeat: no-repeat;
 
     transition: background-image .3s;
@@ -203,5 +203,5 @@
     color: #1c5bc3;
 }
 .new-comment__button-send:hover .new-comment__button-send-layout:after{
-    background: url('/img/icons/css_sprites.png') -157px -10px;
+    background: url('/airplanet/img/icons/css_sprites.png') -157px -10px;
 }

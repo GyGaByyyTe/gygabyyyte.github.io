@@ -45,34 +45,34 @@
 .nav__list-link--active .nav__list-link--main::before,
 .nav__list-link--main:hover::before {
     width: 17px; height: 18px;
-    background: url('/img/icons/css_sprites.png') -50px -100px;
+    background: url('/airplanet/img/icons/css_sprites.png') -50px -100px;
 }
 .nav__list-link--active .nav__list-link--feeds::before,
 .nav__list-link--feeds:hover::before {
     width: 20px; height: 18px;
-    background: url('/img/icons/css_sprites.png') -10px -100px;
+    background: url('/airplanet/img/icons/css_sprites.png') -10px -100px;
 }
 .nav__list-link--active .nav__list-link--team::before,
 .nav__list-link--team:hover::before {
     width: 23px; height: 18px;
-    background: url('/img/icons/css_sprites.png') -53px -62px;
+    background: url('/airplanet/img/icons/css_sprites.png') -53px -62px;
 }
 
 .nav__list-link--main::before {
     width: 17px; height: 18px;
-    background: url('/img/icons/css_sprites.png') -87px -100px;
+    background: url('/airplanet/img/icons/css_sprites.png') -87px -100px;
 
     transition: background-image .3s;
 }
 .nav__list-link--feeds::before {
     width: 20px; height: 18px;
-    background: url('/img/icons/css_sprites.png') -96px -62px;
+    background: url('/airplanet/img/icons/css_sprites.png') -96px -62px;
 
     transition: background-image .3s;
 }
 .nav__list-link--team::before {
     width: 23px; height: 18px;
-    background: url('/img/icons/css_sprites.png') -10px -62px;
+    background: url('/airplanet/img/icons/css_sprites.png') -10px -62px;
 
     transition: background-image .3s;
 }
