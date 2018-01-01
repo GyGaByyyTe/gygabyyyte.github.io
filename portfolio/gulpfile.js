@@ -17,24 +17,38 @@ var del = require("del");
 var jshint = require("gulp-jshint");
 // минификация картинок
 var imagemin = require("gulp-imagemin");
+//проверка на обновленность файла
+var newer = require("gulp-newer");
+
+// var sourcemaps = require("gulp-sourcemaps");
 // var moreCSS = require("gulp-more-css");
 // var jade = require("gulp-jade");
 
 
 // оптимизация изображений
+var image_src = "app/img/**/*";
+var image_dest = "app/img";
+
 gulp.task("imagemin", function () {
-  return gulp.src("app/img/**/*")
-  .pipe(imagemin())
-  .pipe(gulp.dest("app/img"))
+  return gulp.src(image_src)
+    .pipe(newer(image_dest))
+    .pipe(imagemin())
+    .pipe(gulp.dest(image_dest))
 });
 
 // Compile Our Sass
+var css_src = "app/scss/*.scss";
+var css_res = "main.min.css";
+var css_dest = "app/css";
+
 gulp.task("sass", function () {
-  return gulp.src("app/scss/*.scss")
+  return gulp.src(css_src)
+    // .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(concat("main.min.css"))    
+    .pipe(concat(css_res))
     .pipe(cssnano())
-    .pipe(gulp.dest("app/css"))
+    // .pipe(sourcemaps.write())
+    .pipe(gulp.dest(css_dest))
     .pipe(browserSync.reload({ stream: true }));
 });
 
@@ -45,14 +59,17 @@ gulp.task("lint", function () {
     .pipe(jshint.reporter("default"));
 });
 // Concatenate & Minify JS libs
+var js_res = "libs.min.js";
+var js_dest = "app/js";
+
 gulp.task("scripts", function () {
   return gulp.src([
     "app/libs/jquery/dist/jquery.min.js",
     "app/libs/magnific-popup/dist/jquery.magnific-popup.min.js"
   ])
-    .pipe(concat("libs.min.js"))
+    .pipe(concat(js_res))
     .pipe(uglify())
-    .pipe(gulp.dest("app/js"));
+    .pipe(gulp.dest(js_dest));
 });
 
 //live Reload
@@ -72,7 +89,7 @@ gulp.task("clean", function () {
 
 // Watch Files For Changes
 gulp.task("watch", ["liveServer", "lint", "scripts"], function () {
-  gulp.watch("app/scss/*.scss", ["sass"]);
+  gulp.watch(css_src, ["sass"]);
   gulp.watch("app/*.html", browserSync.reload);
   gulp.watch("app/js/**/*.js", browserSync.reload);
 });
@@ -85,7 +102,7 @@ gulp.task("build", ["clean", "sass", "scripts"], function () {
 
   var build_fonts = gulp.src("app/fonts/**/*")
     .pipe(gulp.dest("dist/fonts"));
-  
+
   var build_img = gulp.src("app/img/**/*")
     .pipe(gulp.dest("dist/img"));
 
