@@ -1,0 +1,16 @@
+$header-box-shadow: 0 1px 0 #e6e9ed;
+
+.header {
+    box-shadow: $header-box-shadow;
+    background-color: #ffffff;
+}
+.header__top {
+    box-shadow: $header-box-shadow;
+    background-color: #f5f7fa;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.header__links {
+    display: flex;
+    justify-content: space-between;
+}

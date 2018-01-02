@@ -1,5 +1,7 @@
 // Include gulp
 var gulp = require("gulp");
+var debug = require("gulp-debug");
+var notify = require('gulp-notify');
 
 // Include Our Plugins
 //локальный сервер
@@ -38,13 +40,19 @@ gulp.task("imagemin", function () {
 
 // Compile Our Sass
 var css_src = "app/scss/*.scss";
-var css_res = "main.min.css";
+var css_res = "styles.min.css";
 var css_dest = "app/css";
 
 gulp.task("sass", function () {
   return gulp.src(css_src)
     // .pipe(sourcemaps.init())
-    .pipe(sass())
+    // .pipe(debug({title:"scss"}))
+    .pipe(sass().on('error', notify.onError(
+      {
+        message: "<%= error.message %>",
+        title: "Sass Error!"
+      }))
+    )
     .pipe(concat(css_res))
     .pipe(cssnano())
     // .pipe(sourcemaps.write())
@@ -88,7 +96,7 @@ gulp.task("clean", function () {
 });
 
 // Watch Files For Changes
-gulp.task("watch", ["liveServer", "lint", "scripts"], function () {
+gulp.task("watch", ["liveServer", "scripts"], function () {
   gulp.watch(css_src, ["sass"]);
   gulp.watch("app/*.html", browserSync.reload);
   gulp.watch("app/js/**/*.js", browserSync.reload);

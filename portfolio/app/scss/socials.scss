@@ -1,0 +1,51 @@
+.socials-list {
+    display: flex;
+    justify-content: space-between;
+    width: 157px;
+}
+
+.socials-list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-list__link {
+    font-size: 0;
+}
+
+.socials-list__link--facebook {
+    width: 7px;
+    height: 13px;
+    background: url("../img/socials.png") 0 0 no-repeat;
+}
+
+.socials-list__link--google {
+    width: 11px;
+    height: 11px;
+    background: url("../img/socials.png") -28px -1px no-repeat;
+}
+
+.socials-list__link--twitter {
+    width: 11px;
+    height: 9px;
+    background: url("../img/socials.png") -58px -2px no-repeat;
+}
+
+.socials-list__link--pinterest {
+    width: 9px;
+    height: 11px;
+    background: url("../img/socials.png") -89px -1px no-repeat;
+}
+
+.socials-list__link--behance {
+    width: 13px;
+    height: 10px;
+    background: url("../img/socials.png") -117px -1px no-repeat;
+}
+
+.socials-list__link--dribbble {
+    width: 12px;
+    height: 11px;
+    background: url("../img/socials.png") -147px -1px no-repeat;
+}
