@@ -1,16 +1,33 @@
 $header-box-shadow: 0 1px 0 #e6e9ed;
 
 .header {
-    box-shadow: $header-box-shadow;
+    // box-shadow: $header-box-shadow;
     background-color: #ffffff;
 }
+
 .header__top {
     box-shadow: $header-box-shadow;
     background-color: #f5f7fa;
     padding-top: 12px;
     padding-bottom: 12px;
 }
+
 .header__links {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+.header__bottom {
+    padding-top: 37px;
+    padding-bottom: 32px;
+}
+
+.header__bottom-wrap {
+    @extend .header__links;
+}
+
+.header__nav {
+    width: 50%;
+}
+

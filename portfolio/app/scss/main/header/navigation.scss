@@ -1,0 +1,13 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navigation__item {
+    display: block;
+    color: #506a85;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}

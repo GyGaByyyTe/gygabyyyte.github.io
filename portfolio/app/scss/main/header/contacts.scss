@@ -1,15 +1,14 @@
 .contacts {
     display: flex;
-    padding-left: 11px;
 }
 
 .contacts__item {
     margin-right: 16px;
     padding-left: 19px;
     color: #506a85;
-    font-family: "Source Sans Pro";
     font-size: 12px;
     font-weight: 400;
+    position: relative;
 
     &:last-child {
         margin-right: 0;
@@ -25,7 +24,6 @@
 }
 
 .contacts__item--mail {
-    position: relative;
 
     &:before {
         @include icon-before;
@@ -40,7 +38,6 @@
 }
 
 .contacts__item--phone {
-    position: relative;
 
     &:before {
         @include icon-before;

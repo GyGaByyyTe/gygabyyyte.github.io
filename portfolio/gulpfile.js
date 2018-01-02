@@ -39,7 +39,7 @@ gulp.task("imagemin", function () {
 });
 
 // Compile Our Sass
-var css_src = "app/scss/*.scss";
+var css_src = "app/scss/**/*.scss";
 var css_res = "styles.min.css";
 var css_dest = "app/css";
 
@@ -96,7 +96,7 @@ gulp.task("clean", function () {
 });
 
 // Watch Files For Changes
-gulp.task("watch", ["liveServer", "scripts"], function () {
+gulp.task("watch", ["liveServer", "sass", "scripts"], function () {
   gulp.watch(css_src, ["sass"]);
   gulp.watch("app/*.html", browserSync.reload);
   gulp.watch("app/js/**/*.js", browserSync.reload);
