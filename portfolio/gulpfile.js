@@ -44,7 +44,7 @@ var css_res = "styles.min.css";
 var css_dest = "app/css";
 
 gulp.task("sass", function () {
-  return gulp.src(css_src)
+  return gulp.src("app/scss/styles.scss")
     // .pipe(sourcemaps.init())
     // .pipe(debug({title:"scss"}))
     .pipe(sass().on('error', notify.onError(
@@ -97,7 +97,9 @@ gulp.task("clean", function () {
 
 // Watch Files For Changes
 gulp.task("watch", ["liveServer", "sass", "scripts"], function () {
-  gulp.watch(css_src, ["sass"]);
+  gulp.watch(css_src, function (event, cb) {
+    setTimeout(function () { gulp.start('sass'); }, 500) // задача выполниться через 500 миллисекунд и файл успеет сохраниться на диске
+  });
   gulp.watch("app/*.html", browserSync.reload);
   gulp.watch("app/js/**/*.js", browserSync.reload);
 });

@@ -1,0 +1,29 @@
+
+// Импортируем все переменные, миксины и т.д.
+@import 'abstracts/variables';
+
+// Импортируем все сторонние библиотеки
+// @import "../libs/magnific-popup/dist/magnific-popup";
+
+// Импортируем базовые стили
+@import 'base/base';
+
+//Ипортируем стили для отдельных элементов страницы
+@import 'layout/about';
+@import 'layout/contacts';
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/logo';
+@import 'layout/main';
+@import 'layout/navigation';
+@import 'layout/search';
+@import 'layout/socials';
+
+// Стили отдельных компонентов
+// @import 'components/dropdown';
+
+// Персональные стили для страниц
+// @import 'pages/home';
+
+// Персональные стили для тем
+// @import 'themes/default';
