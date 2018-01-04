@@ -48,18 +48,10 @@ a {
     visibility: hidden;
 }
 
-
-
 .wrapper {
     background-color: #ffffff;
     width: 100%;
     overflow: hidden;
-
-    &:after {
-        content: "";
-        height: $footer-width;
-        display: block;
-    }
 }
 
 .container {
@@ -71,6 +63,4 @@ a {
     padding-right: 11px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
-
-    // font-family: 'Lato', sans-serif;
 }

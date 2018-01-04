@@ -1,8 +1,6 @@
 .main {
     background-color: #506a85;
-    height: 100vh;
-    overflow: hidden;
-    
+    @include section-prop;
 }
 
 .main__container {

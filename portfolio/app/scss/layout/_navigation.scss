@@ -1,5 +1,5 @@
 .navigation {
-    display: flex;
+    @include flex-prop;
     justify-content: space-between;
     width: 100%;
 }

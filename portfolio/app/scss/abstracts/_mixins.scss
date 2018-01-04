@@ -1,0 +1,17 @@
+@mixin flex-prop {
+    display: flex;
+    // flex-wrap: wrap;
+}
+
+@mixin header__contacts-item--icon-before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 0;
+}
+
+@mixin section-prop {
+    height: 100vh;
+    overflow: hidden;
+}

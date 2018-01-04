@@ -1,11 +1,11 @@
 .socials-list {
-    display: flex;
+    @include flex-prop;
     justify-content: space-between;
     width: 157px;
 }
 
 .socials-list__item {
-    display: flex;
+    @include flex-prop;
     justify-content: center;
     align-items: center;
 }
@@ -39,9 +39,9 @@
 }
 
 .socials-list__link--behance {
-    width: 13px;
+    width: 14px;
     height: 10px;
-    background: url("../img/socials.png") -117px -1px no-repeat;
+    background: url("../img/socials.png") -116px -1px no-repeat;
 }
 
 .socials-list__link--dribbble {
