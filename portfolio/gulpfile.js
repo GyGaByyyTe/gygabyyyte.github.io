@@ -70,14 +70,16 @@ gulp.task("lint", function () {
 var js_res = "libs.min.js";
 var js_dest = "app/js";
 
-gulp.task("scripts", function () {
+gulp.task("scripts", ["lint"], function () {
   return gulp.src([
-    "app/libs/jquery/dist/jquery.min.js",
-    "app/libs/magnific-popup/dist/jquery.magnific-popup.min.js"
+    // "app/libs/jquery/dist/jquery.min.js",
+    // "app/libs/magnific-popup/dist/jquery.magnific-popup.min.js"
+    "app/js/*.js"
   ])
-    .pipe(concat(js_res))
-    .pipe(uglify())
-    .pipe(gulp.dest(js_dest));
+    // .pipe(concat(js_res))
+    // .pipe(uglify())
+    .pipe(gulp.dest(js_dest))
+    .pipe(browserSync.reload({ stream: true }));
 });
 
 //live Reload
@@ -95,16 +97,16 @@ gulp.task("clean", function () {
   return del.sync("dist");
 });
 
-// Watch Files For Changes
+// Watch Files For Changes 
 gulp.task("watch", ["liveServer", "sass", "scripts"], function () {
   gulp.watch(css_src, function (event, cb) {
     setTimeout(function () { gulp.start('sass'); }, 500) // задача выполниться через 500 миллисекунд и файл успеет сохраниться на диске
   });
   gulp.watch("app/*.html", browserSync.reload);
-  gulp.watch("app/js/**/*.js", browserSync.reload);
+  gulp.watch("app/js/**/*.js", ["scripts"]);
 });
 
-//Build task
+//Build task 
 gulp.task("build", ["clean", "sass", "scripts", "imagemin"], function () {
 
   var build_css = gulp.src(["app/css/*"])
