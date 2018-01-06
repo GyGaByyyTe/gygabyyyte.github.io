@@ -1,4 +1,6 @@
 .about {
+    @include section-prop;
+
     margin-top: 9vh;
     margin-bottom: 9vh;
 }
@@ -24,9 +26,10 @@
 }
 
 .about__item {
-    // max-width: 269px;
+    max-width: 45vh;
     position: relative;
-    padding-left: 65px;
+    padding-left: 75px;
+    text-align: left;
 }
 
 .about__item--passion {

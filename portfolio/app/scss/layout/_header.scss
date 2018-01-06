@@ -1,8 +1,13 @@
 .header {
+    @include flex-prop;
+
+    flex-direction: column;
     background-color: #ffffff;
 }
 
 .header__top {
+    @include flex-prop;
+
     box-shadow: $header-box-shadow;
     background-color: #f5f7fa;
     padding-top: 12px;
@@ -62,6 +67,8 @@
 }
 
 .header__bottom {
+    @include flex-prop;
+
     padding-top: 37px;
     padding-bottom: 32px;
 }

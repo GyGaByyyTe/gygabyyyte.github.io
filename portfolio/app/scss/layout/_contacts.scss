@@ -1,6 +1,5 @@
 .contacts {
-    @include section-prop;
-    @include flex-prop;
+    @include section-prop
 
     height: 45vh;
     align-items: center;

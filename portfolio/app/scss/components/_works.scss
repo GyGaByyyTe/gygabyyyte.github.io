@@ -1,0 +1,12 @@
+.works {
+    @include flex-prop;
+    justify-content: space-between;
+    width: 100vh;
+}
+
+.works__item-img {
+    width: 21vh;
+    height: 14vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -6,10 +6,11 @@
 }
 
 .footer__top {
+    @include flex-prop;
+
     background-color: #2f4052;
     padding-top: 70px;
     padding-bottom: 75px;
-    display: flex;
     align-items: center;
 }
 

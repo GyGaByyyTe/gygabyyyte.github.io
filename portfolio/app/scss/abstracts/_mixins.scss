@@ -4,8 +4,9 @@
     // flex-wrap: wrap;
 }
 
-@mixin section-prop {
-    height: 100vh;
+@mixin section-prop{
+    @include flex-prop;
+    
     overflow: hidden;
 }
 
