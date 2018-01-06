@@ -1,5 +1,6 @@
 .navigation {
     @include flex-prop;
+
     justify-content: space-between;
     width: 100%;
 }
@@ -10,4 +11,6 @@
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
+
+    @include hover-anim-one(color,$button-color);
 }

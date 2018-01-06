@@ -105,7 +105,7 @@ gulp.task("watch", ["liveServer", "sass", "scripts"], function () {
 });
 
 //Build task
-gulp.task("build", ["clean", "sass", "scripts"], function () {
+gulp.task("build", ["clean", "sass", "scripts", "imagemin"], function () {
 
   var build_css = gulp.src(["app/css/*"])
     .pipe(gulp.dest("dist/css"));

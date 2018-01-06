@@ -1,3 +1,77 @@
 .about {
-    @include section-prop;
+    margin-top: 9vh;
+    margin-bottom: 9vh;
+}
+
+.about__wrap {
+    @include section-inner-wrap;
+}
+
+.about__text {
+    max-width: 790px;
+}
+
+.about__desc {
+    padding-top: 2vh;
+}
+
+.about__skills {
+    @include flex-prop;
+
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 5.5vh;
+}
+
+.about__item {
+    // max-width: 269px;
+    position: relative;
+    padding-left: 65px;
+}
+
+.about__item--passion {
+    &::before {
+        @include item--icon-before(0.5em, 0, 0);
+
+        width: 61px;
+        height: 53px;
+        background: url("../img/about-icon-01-1.png") center center no-repeat;
+    }
+}
+
+.about__item--creativity {
+    &::before {
+        @include item--icon-before(0.5em, 0, 0);
+
+        width: 46px;
+        height: 65px;
+        background: url("../img/about-icon-02-1.png") center center no-repeat;
+    }
+}
+
+.about__item--quality {
+    &::before {
+        @include item--icon-before(0.5em, 0, 0);
+
+        width: 56px;
+        height: 53px;
+        background: url("../img/about-icon-03-1.png") center center no-repeat;
+    }
+}
+
+.about__item-title {
+    color: #506a85;
+    font-family: Lato;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.52px;
+    line-height: 34px;
+}
+
+.about__item-desc {
+    color: #73879c;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.16px;
+    line-height: 25px;
 }

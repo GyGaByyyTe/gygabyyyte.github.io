@@ -1,14 +1,14 @@
 .footer {
     @include flex-prop;
-    flex: 1;
+
     flex-direction: column;
+    margin-top: -$footer-height;
 }
 
 .footer__top {
     background-color: #2f4052;
-    // padding-top: 70px;
-    // padding-bottom: 75px;
-    flex: 8;
+    padding-top: 70px;
+    padding-bottom: 75px;
     display: flex;
     align-items: center;
 }
@@ -64,11 +64,10 @@
 
 .footer__bottom {
     background-color: #283645;
-    // padding-top: 34px;
-    // padding-bottom: 34px;
+    padding-top: 34px;
+    padding-bottom: 34px;
     display: flex;
     align-items: center;
-    flex: 2;
 }
 
 .footer__bottom-wrap {
@@ -93,6 +92,8 @@
     position: relative;
     padding-right: 10px;
     margin-right: 10px;
+
+    @include hover-anim-one(color,$button-color);
 
     &::after {
         content: ".";

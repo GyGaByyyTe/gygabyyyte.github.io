@@ -1,11 +1,13 @@
 .socials-list {
     @include flex-prop;
+
     justify-content: space-between;
     width: 157px;
 }
 
 .socials-list__item {
     @include flex-prop;
+
     justify-content: center;
     align-items: center;
 }

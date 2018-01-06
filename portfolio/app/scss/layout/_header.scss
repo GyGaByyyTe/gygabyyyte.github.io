@@ -11,6 +11,7 @@
 
 .header__links {
     @include flex-prop;
+
     justify-content: space-between;
     align-items: center;
 }
@@ -27,29 +28,33 @@
     font-weight: 400;
     position: relative;
 
+    @include hover-anim-one(color,$button-color);
+
     &:last-child {
         margin-right: 0;
     }
 }
 
-.header__contacts-item--mail {
 
+
+.header__contacts-item--mail {
     &:before {
-        @include header__contacts-item--icon-before;
+        @include item--icon-before(50%,0,-50%);
+
         width: 11px;
         height: 9px;
         background: url("../img/contacts-icon-mail-1.png") center center no-repeat;
     }
 
     &:hover:before {
-        background: url("../img/contacts-icon-mail-2.png") center center no-repeat;        
+        background: url("../img/contacts-icon-mail-2.png") center center no-repeat;
     }
 }
 
 .header__contacts-item--phone {
-
     &:before {
-        @include header__contacts-item--icon-before;
+        @include item--icon-before(50%,0,-50%);
+
         width: 7px;
         height: 13px;
         background: url("../img/contacts-icon-phone-1.png") center center no-repeat;
@@ -68,4 +73,3 @@
 .header__nav {
     width: 50%;
 }
-

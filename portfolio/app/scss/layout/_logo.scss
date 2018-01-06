@@ -1,3 +1,9 @@
 .logo {
     display: block;
+
+    @include transition;
+
+    &:hover {
+        opacity: .5;
+    }
 }

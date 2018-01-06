@@ -1,33 +1,23 @@
 .contacts {
     @include section-prop;
     @include flex-prop;
-    flex-direction: column;
-}
 
-.contacts__content {
-    @include flex-prop;
-
+    height: 45vh;
     align-items: center;
-    flex-grow: 1;
 }
+
+.contacts__wrap {
+    @include section-inner-wrap;
+}
+
 .contacts__text {
     max-width: 750px;
-    margin: 0 auto;
-    text-align: center;
-}
-.contacts__title {
-    color: #506a85;
-    font-family: 'Lato', sans-serif;
-    font-size: 44px;
-    font-weight: 700;
-    letter-spacing: 0.44px;
-    line-height: 54px;
 }
 
-.contacts__desc {
-    color: #73879c;
-    font-size: 22px;
-    font-weight: 400;
-    letter-spacing: 0.22px;
-    line-height: 34px;
+.contacts__buttons {
+    @include button-prop(150px, 50px);
+
+    margin: 3vh auto 0;
+
+    @include hover-anim-one(background-color, $button-color-hover);
 }

@@ -1,12 +1,8 @@
 .main {
+    // @include section-prop;
+
+    height: 70vh;
     background-color: #506a85;
-    @include section-prop;
 }
 
-.main__container {
-    height: 100%;
-    background-image: url("../img/background-main.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+

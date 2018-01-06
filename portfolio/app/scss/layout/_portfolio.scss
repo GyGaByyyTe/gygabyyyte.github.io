@@ -1,4 +1,13 @@
 .portfolio {
     @include section-prop;
+
     background-color: #f2f5f7;
+}
+
+.portfolio__wrap {
+    @include section-inner-wrap;
+}
+
+.portfolio__top {
+    max-width: 747px;
 }

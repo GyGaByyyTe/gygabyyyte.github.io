@@ -1,17 +1,71 @@
 @mixin flex-prop {
     display: flex;
-    // flex-wrap: wrap;
-}
 
-@mixin header__contacts-item--icon-before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
-    left: 0;
+    // flex-wrap: wrap;
 }
 
 @mixin section-prop {
     height: 100vh;
     overflow: hidden;
+}
+
+@mixin transition {
+    transition: all .3s;
+}
+
+@mixin transition-prop($prop, $time, $func, $delay) {
+    transition-property: $prop;
+    transition-duration: $time;
+    transition-timing-function: $func;
+    transition-delay: $delay;
+}
+// Установка одного свойства на ховер элемента с плавной анимацией
+@mixin hover-anim-one($prop,$value) {
+    @include transition;
+
+    &:hover {
+        #{$prop}: $value;
+    }
+}
+// Установка нескольких свойств из map на ховер элемента с плавной анимацией
+@mixin hover-anim-many($list-prop) {
+    @include transition;
+
+    &:hover {
+        @each $key,$value in $list-prop {
+            #{$key}: $value;
+        }
+    }
+}
+
+@mixin button-prop($width, $height) {
+    width: $width;
+    height: $height;
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+    background-color: $button-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+
+    @include transition;
+}
+
+@mixin item--icon-before ($top,$translateX, $translateY) {
+    content: "";
+    position: absolute;
+    top: $top;
+    transform: translate($translateX,  $translateY);
+    left: 0;
+}
+
+@mixin section-inner-wrap {
+    @include flex-prop;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
