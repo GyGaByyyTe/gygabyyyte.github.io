@@ -1,0 +1,14 @@
+{
+  "name": "level2",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "GyGaByyyTe <gygabyyyte@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/GyGaByyyTe/gygabyyyte.github.io",
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "normalize-css": "normalize.css#^7.0.0"
+  }
+}
