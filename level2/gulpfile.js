@@ -52,6 +52,7 @@ var newer = require("gulp-newer");
 
   // Compile Our Sass
     gulp.task("cssSelf", function () {
+      // все исходные стили компилятся из одного файла с импортами
       return gulp.src("app/scss/styles.scss")
         // .pipe(sourcemaps.init())
         // .pipe(debug({title:"scss"}))

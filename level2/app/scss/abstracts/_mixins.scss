@@ -1,6 +1,9 @@
 @mixin flex-prop {
     display: flex;
+}
 
+@mixin font-ubuntu {
+    font-family: 'Ubuntu', sans-serif;
 }
 
 @mixin transition {

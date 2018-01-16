@@ -1,0 +1,36 @@
+.nav {
+    @include font-ubuntu;
+
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+.nav__item {
+    padding-left: 17px;
+    padding-right: 18px;
+    position: relative;
+
+    &::after {
+        content: "•";
+        position: absolute;
+        top: 0px;
+        right: -2px;
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+
+        &::after {
+            content: "";
+        }
+    }
+
+    
+}

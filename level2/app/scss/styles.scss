@@ -10,10 +10,14 @@
 @import 'base/base';
 
 //Ипортируем Cтили для отдельных элементов страницы
-//@import 'layout/header';
+@import 'layout/main-section';
+@import 'layout/header';
+@import 'layout/logo';
+@import 'layout/nav';
 
 //Ипортируем Стили отдельных компонентов
-// @import 'components/dropdown';
+@import 'components/buttons';
+@import 'components/slider';
 
 //Ипортируем Персональные стили для страниц
 // @import 'pages/home';

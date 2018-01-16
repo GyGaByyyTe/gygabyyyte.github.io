@@ -1,0 +1,10 @@
+.slider {
+    @include flex-prop;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__picture {
+    width: 439px;
+    height: 412px;
+}
