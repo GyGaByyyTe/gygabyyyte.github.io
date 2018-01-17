@@ -1,0 +1,83 @@
+.about {
+    background-image: url("../img/backgrounds/section_22_bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    max-height: 650px;
+    color: #2f3234;
+    padding-top: 12px;
+    position: relative;
+}
+
+.about__title {
+    margin-top: 105px;
+}
+
+.about__list {
+    display: flex;
+    justify-content: space-around;
+    width: 87%;
+    margin-top: 40px;
+}
+
+.about__item {
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about__item-top {
+    padding-top: 3px;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+}
+
+.about__item-top--fresh {
+    display: inline-block;
+    width: 5em;
+    height: 6em;
+    background: url() 0 0 no-repeat;
+    background-image: url(../img/icons/meat.svg), none;
+    background-size: auto 100%;
+    vertical-align: middle;
+}
+
+.about__item-top--handmade {
+    display: inline-block;
+    width: 6em;
+    height: 5.5em;
+    background: url() 0 0 no-repeat;
+    background-image: url(../img/icons/hand.svg), none;
+    background-size: auto 100%;
+    vertical-align: middle;
+}
+
+.about__item-top--natural {
+    display: inline-block;
+    width: 6em;
+    height: 6em;
+    background: url() 0 0 no-repeat;
+    background-image: url(../img/icons/natural.svg), none;
+    background-size: auto 100%;
+    vertical-align: middle;
+}
+
+.about__item-mid {
+    font-family: "Lifehack",serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17em;
+    margin-top: 33px;
+}
+
+.about__item-bot {
+    margin-top: 14px;
+    opacity: 0.8;
+    font-family: "Ubuntu",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7em;
+}

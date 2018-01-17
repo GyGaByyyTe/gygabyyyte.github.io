@@ -70,7 +70,21 @@ a {
 
 .container--main {
     @include flex-prop;
+
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+.container--about {
+    @include flex-prop;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.section-title {
+    font-family: "Gagalin",sans-serif;
+    font-size: 72px;
+    font-weight: 400;
 }
