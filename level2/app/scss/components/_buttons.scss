@@ -1,7 +1,7 @@
 .button-next {
     display: block;
-    width: 15px;
-    height: 15px;
+    width: 21px;
+    height: 21px;
     font-size: 0;
     border-top: 2px solid #fff;
     border-right: 2px solid #fff;
@@ -22,4 +22,8 @@
     background-color: #e45028;
     border: 1px solid #e45028;
     border-radius: 3px;    
+    cursor: pointer;
+
+    @include hover-anim-many ((background-color:#c1401e,border-color:#c1401e));
+
 }
