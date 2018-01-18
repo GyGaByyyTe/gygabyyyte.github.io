@@ -1,11 +1,8 @@
 .main-section {
+    @include section-prop;
+
     background-image: url("../img/backgrounds/section_1_bg.png");
-    background-size: cover;
-    height: 100vh;
-    max-height: 650px;
     padding-bottom: 42px;
-    padding-top: 12px;
-    position: relative;
 
     &:before {
         content: "";

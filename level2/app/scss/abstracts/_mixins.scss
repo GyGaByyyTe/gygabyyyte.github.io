@@ -2,6 +2,16 @@
     display: flex;
 }
 
+@mixin section-prop {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 12px;
+    position: relative;    
+}
+
 @mixin font-ubuntu {
     font-family: 'Ubuntu', sans-serif;
 }
