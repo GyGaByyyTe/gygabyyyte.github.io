@@ -63,7 +63,7 @@ var newer = require("gulp-newer");
           }))
         )
         .pipe(concat(css_res))
-        .pipe(cssnano())
+        // .pipe(cssnano())
         // .pipe(sourcemaps.write())
         .pipe(gulp.dest(css_dest))
         .pipe(browserSync.reload({ stream: true }));

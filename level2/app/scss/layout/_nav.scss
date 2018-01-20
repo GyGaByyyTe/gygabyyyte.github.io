@@ -1,37 +1,37 @@
 .nav {
     @include font-ubuntu;
 
-    font-size: 13px;
-    font-weight: 500;
-    display: flex;
-    justify-content: space-around;
-    text-transform: uppercase;
+    margin-right: rem(18px);
 }
 
 .nav__item {
-    padding-left: 17px;
-    padding-right: 18px;
-    position: relative;
-    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
 
-    &::after {
-        content: "•";
-        position: absolute;
-        top: 0px;
-        right: -2px;
+    &:after {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 12px;
+        content: ' ';
+
+        @include circle(5px, $color_white);
     }
 
-    &:first-child {
-        padding-left: 0;
+    &:last-child:after {
+        display: none;
     }
+}
 
-    &:last-child {
-        padding-right: 0;
+.nav__link {
+    color: $color_white;
+    font-size: rem(13px);
+    font-weight: 400;
+    line-height: 1.8;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
 
-        &::after {
-            content: "";
-        }
-    }
-
-    
+    @include hover-anim-one(text-decoration, underline);
 }

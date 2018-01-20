@@ -2,13 +2,12 @@
     @include flex-prop;
 
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
     padding-left: 77px;
     padding-right: 80px;
+    padding-top: 13px;    
     z-index: 10;
 }
 
-.header__mid {
-    margin-left: 215px;
+.header__left {
+    margin-right: auto;
 }

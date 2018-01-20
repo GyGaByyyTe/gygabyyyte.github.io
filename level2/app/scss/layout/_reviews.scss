@@ -2,23 +2,55 @@
     @include section-prop;
 
     padding: 0;
-    background-color:#fff;
-    color: #fff;
+    background-color: $color_white;
+    color: $color_white;
 }
+
 .reviews__list {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
 }
+
 .reviews__item {
     width: 25%;
     height: 50%;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 0;
     background-size: cover;
 }
+
 .reviews__img {
     width: 0;
     height: 0;
+}
+
+.reviews__desc {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+    padding-top: 46px;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.reviews__person {
+    font-family: $font_gagalin,sans-serif;
+    font-size: rem(14px);
+    font-weight: 400;
+}
+
+.reviews__text {
+    max-width: 90%;
+    line-height: 1.76;
+    margin-top: 19px;
+    margin-bottom: 14px;
+    font-family: $font_ubuntu,sans-serif;
+    font-size: rem(14px);
+    font-weight: 300;
 }

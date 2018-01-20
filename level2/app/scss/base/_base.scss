@@ -45,20 +45,24 @@ a {
 }
 
 .hidden {
-    visibility: hidden;
+    //Из первого урока Юрия по SCSS
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .wrapper {
-    color: #fff;
-    background-color: #ffffff;
+    color: $color_white;
+    background-color: $color_white;
     width: 100%;
     overflow: hidden;
-
-    // &:after {
-    //     content: "";
-    //     height: $footer-height;
-    //     display: block;
-    // }
 }
 
 .container {
@@ -72,19 +76,18 @@ a {
     @include flex-prop;
 
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
+
 .container--about {
     @include flex-prop;
 
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
 }
 
 .section-title {
-    font-family: "Gagalin",sans-serif;
+    font-family: $font_gagalin,sans-serif;
     font-size: 72px;
     font-weight: 400;
 }

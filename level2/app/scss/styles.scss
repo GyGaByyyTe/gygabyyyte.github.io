@@ -1,28 +1,27 @@
-
 // Импортируем все переменные, миксины и т.д.
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
 // Импортируем все сторонние библиотеки
 // @import "../libs/jquery/dist/jquery";
 
 // Импортируем базовые стили
-@import 'base/fonts';
-@import 'base/base';
+@import "base/fonts";
+@import "base/base";
 
 //Ипортируем Cтили для отдельных элементов страницы
-@import 'layout/main-section';
-@import 'layout/header';
-@import 'layout/logo';
-@import 'layout/nav';
+@import "layout/main-section";
+@import "layout/header";
+@import "layout/logo";
+@import "layout/nav";
 
-@import 'layout/about';
+@import "layout/about";
 
-@import 'layout/reviews';
+@import "layout/reviews";
 
 //Ипортируем Стили отдельных компонентов
-@import 'components/buttons';
-@import 'components/slider';
+@import "components/buttons";
+@import "components/slider";
 
 //Ипортируем Персональные стили для страниц
 // @import 'pages/home';

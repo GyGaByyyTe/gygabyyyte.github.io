@@ -2,11 +2,7 @@
     @include section-prop;
 
     background-image: url("../img/backgrounds/section_2_bg.jpg");
-    color: #2f3234;
-}
-
-.about__title {
-    margin-top: 105px;
+    color: $color_dark;
 }
 
 .about__list {
@@ -17,7 +13,7 @@
 }
 
 .about__item {
-    width: 300px;
+    max-width: 300px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -32,49 +28,45 @@
     text-align: center;
 }
 
-.about__item-top--fresh {
+.about__icon {
     display: inline-block;
-    width: 6em;
-    height: 5.5em;
-    background: url() 0 0 no-repeat;
-    background-image: url(../img/icons/meat.svg), none;
+    background-position: 0;
+    background-repeat: no-repeat;
     background-size: auto 100%;
     vertical-align: middle;
-}
 
-.about__item-top--handmade {
-    display: inline-block;
-    width: 5em;
-    height: 5.5em;
-    background: url() 0 0 no-repeat;
-    background-image: url(../img/icons/hand.svg), none;
-    background-size: auto 100%;
-    vertical-align: middle;
-}
+    &--fresh {
+        width: 6em;
+        height: 5.5em;
+        background-image: url(../img/icons/meat.svg), none;
+    }
 
-.about__item-top--natural {
-    display: inline-block;
-    width: 5.5em;
-    height: 5em;
-    background: url() 0 0 no-repeat;
-    background-image: url(../img/icons/natural.svg), none;
-    background-size: auto 100%;
-    vertical-align: middle;
+    &--handmade {
+        width: 5em;
+        height: 5.5em;
+        background-image: url(../img/icons/hand.svg), none;
+    }
+
+    &--natural {
+        width: 5.5em;
+        height: 5em;
+        background-image: url(../img/icons/natural.svg), none;
+    }
 }
 
 .about__item-mid {
-    font-family: "Lifehack",serif;
-    font-size: 24px;
+    margin-top: 33px;
+    font-family: $font_lifehack,serif;
+    font-size: rem(24px);
     font-weight: 500;
     line-height: 1.17em;
-    margin-top: 33px;
 }
 
 .about__item-bot {
     margin-top: 14px;
     opacity: 0.8;
-    font-family: "Ubuntu",sans-serif;
-    font-size: 14px;
+    font-family: $font_ubuntu,sans-serif;
+    font-size: rem(14px);
     font-weight: 300;
     line-height: 1.7em;
 }

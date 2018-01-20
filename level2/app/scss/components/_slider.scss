@@ -3,7 +3,8 @@
 
     justify-content: center;
     align-items: center;
-    margin-bottom: 90px;
+    margin-bottom: auto;
+    z-index: 10;
 }
 
 .slider__picture {
@@ -12,20 +13,20 @@
 }
 
 .slider__desc {
-    padding-top: 70px;
-    padding-left: 18px;
+    padding-top: 55px;
+    padding-left: 15px;
     max-width: 40%;
 }
 
 .slider__title {
-    color: #f9b43b;
-    line-height: 85px;
+    color: $color_yellow;
+    line-height: 1.2;
 }
 
 .slider__text {
     padding-top: 20px;
-    color: #ffffff;
-    font-family: "Lifehack",sans-serif;
+    color: $color_white;
+    font-family: $font_lifehack,sans-serif;
     font-size: 65px;
     font-weight: 500;
     letter-spacing: -1.63px;
