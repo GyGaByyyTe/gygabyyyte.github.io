@@ -292,7 +292,7 @@ a {
   padding: 0;
   width: 1.875rem;
   height: 0.9375rem;
-  background-image: url("/img/icons/arrow-scroll.svg");
+  background-image: url("../img/icons/arrow-scroll.svg");
   background-repeat: no-repeat;
   font-size: 0; }
 
