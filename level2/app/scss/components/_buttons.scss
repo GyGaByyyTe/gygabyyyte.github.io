@@ -34,8 +34,8 @@
 }
 
 .button--more {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-left: 13px;
+    padding-right: 13px;
 
     @include set-button-colors($color_dark, $color_dark_hover);
 }

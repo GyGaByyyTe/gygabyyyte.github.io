@@ -225,7 +225,6 @@ a {
   height: 100vh;
   min-height: 650px;
   position: relative;
-  padding: 0;
   background-color: #fff;
   color: #fff; }
 
@@ -251,7 +250,7 @@ a {
 .reviews__desc {
   opacity: 0;
   background: rgba(0, 0, 0, 0.7);
-  padding-left: 8%;
+  padding-left: 7%;
   padding-right: 7%;
   padding-top: 17%;
   position: absolute;
@@ -307,8 +306,8 @@ a {
     border-color: #c1401e; }
 
 .button--more {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-left: 13px;
+  padding-right: 13px;
   background-color: #2f3234;
   border: 1px solid #2f3234;
   transition: all .3s; }
@@ -358,3 +357,43 @@ a {
   font-weight: 500;
   letter-spacing: -1.63px;
   line-height: 3.875rem; }
+
+.global-menu {
+  position: fixed;
+  top: 90px;
+  right: 20px; }
+
+.global-menu__item {
+  margin-bottom: 5px; }
+
+.global-menu__link {
+  display: block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  position: relative; }
+  .global-menu__link::before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #fff; }
+  .global-menu__link::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: all .3s; }
+  .global-menu__link:hover:after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
