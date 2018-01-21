@@ -16,6 +16,10 @@
     background-image: url("../img/icons/arrow-scroll.svg");
     background-repeat: no-repeat;
     font-size: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 @mixin set-button-colors($color, $hover_color) {
@@ -30,5 +34,8 @@
 }
 
 .button--more {
+    padding-top: 12px;
+    padding-bottom: 12px;
+
     @include set-button-colors($color_dark, $color_dark_hover);
 }

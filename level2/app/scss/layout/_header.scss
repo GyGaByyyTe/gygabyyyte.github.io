@@ -1,10 +1,7 @@
 .header {
     @include flex-prop;
 
-    width: 100%;
-    padding-left: 77px;
-    padding-right: 80px;
-    padding-top: 13px;    
+    width: 100%;  
     z-index: 10;
 }
 

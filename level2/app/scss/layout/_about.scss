@@ -3,17 +3,18 @@
 
     background-image: url("../img/backgrounds/section_2_bg.jpg");
     color: $color_dark;
+    padding-bottom: 35px;
 }
 
 .about__list {
     display: flex;
-    justify-content: space-around;
-    width: 87%;
+    justify-content: space-between;
+    width: 100%;
     margin-top: 40px;
 }
 
 .about__item {
-    max-width: 300px;
+    width: 32%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -56,16 +57,16 @@
 
 .about__item-mid {
     margin-top: 33px;
-    font-family: $font_lifehack,serif;
+    font-family: $font_lifehack, serif;
     font-size: rem(24px);
     font-weight: 500;
     line-height: 1.17em;
 }
 
 .about__item-bot {
-    margin-top: 14px;
+    margin-top: 15px;
     opacity: 0.8;
-    font-family: $font_ubuntu,sans-serif;
+    font-family: $font_ubuntu, sans-serif;
     font-size: rem(14px);
     font-weight: 300;
     line-height: 1.7em;
