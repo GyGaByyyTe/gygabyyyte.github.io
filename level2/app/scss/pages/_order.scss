@@ -1,0 +1,5 @@
+.order {
+    @include section-prop;
+
+    background-color: $color_dark;
+}

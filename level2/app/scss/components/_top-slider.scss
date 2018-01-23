@@ -1,4 +1,4 @@
-.slider {
+.top-slider {
     @include flex-prop;
 
     justify-content: center;
@@ -12,32 +12,32 @@
     right: 0;
 }
 
-.slider__picture {
+.top-slider__picture {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
 }
 
-.slider__img {
+.top-slider__img {
     position: relative;
     left: 50%;
     top: 50%;
     transform: translate(-49%,-5%);
 }
 
-.slider__desc {
+.top-slider__desc {
     padding-top: 25px;
     margin-left: 15px;
     flex: 1;
 }
 
-.slider__title {
+.top-slider__title {
     color: $color_yellow;
     line-height: 1.2;
 }
 
-.slider__text {
+.top-slider__text {
     margin-top: 20px;
     color: $color_white;
     font-family: $font_lifehack,sans-serif;

@@ -10,21 +10,29 @@
 @import "base/base";
 
 //Ипортируем Cтили для отдельных элементов страницы
-@import "layout/main-section";
+
 @import "layout/header";
 @import "layout/logo";
 @import "layout/nav";
 
-@import "layout/about";
 
-@import "layout/reviews";
 
 //Ипортируем Стили отдельных компонентов
 @import "components/buttons";
-@import "components/slider";
+@import "components/top-slider";
 @import "components/global-menu";
 
 //Ипортируем Персональные стили для страниц
+@import "pages/main-section";
+@import "pages/about";
+@import "pages/burgers";
+@import "pages/team";
+@import "pages/slider";
+@import "pages/reviews";
+@import "pages/order";
+@import "pages/map";
+
+
 // @import 'pages/home';
 
 //Ипортируем Персональные стили для тем
