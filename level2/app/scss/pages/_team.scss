@@ -26,10 +26,10 @@
     padding-left: 5%;
 }
 
-.team__list-item {
+.team__accordeon-item {
     margin-bottom: 4%;
 
-    &.active {
+    &--active {
         .team__item-header {
             color: $color_yellow;
 

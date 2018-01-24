@@ -79,6 +79,11 @@ a {
   flex-direction: column;
   justify-content: center; }
 
+.container--contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
 .section-title {
   font-family: "Gagalin", sans-serif;
   font-size: 72px;
@@ -88,8 +93,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  z-index: 10; }
+  width: 100%; }
 
 .header__left {
   margin-right: auto; }
@@ -132,6 +136,16 @@ a {
   .nav__link:hover {
     text-decoration: underline; }
 
+.footer {
+  padding-top: 5px;
+  padding-bottom: 10px; }
+
+.footer__left {
+  flex: 1; }
+
+.footer__right {
+  text-align: right; }
+
 .button {
   display: inline-block;
   text-transform: uppercase;
@@ -142,17 +156,19 @@ a {
   padding: 10px 15px; }
 
 .button--next {
-  z-index: 10;
-  padding: 0;
-  width: 1.875rem;
-  height: 0.9375rem;
-  background-image: url("../img/icons/arrow-scroll.svg");
-  background-repeat: no-repeat;
-  font-size: 0;
   position: absolute;
   bottom: 0;
   left: 50%;
+  padding: 0;
+  width: 1.875rem;
+  height: 0.9375rem;
+  font-size: 0;
   transform: translateX(-50%); }
+
+.button__icon--arrow-scroll {
+  width: 29px;
+  height: 14px;
+  fill: #fff; }
 
 .button--order {
   background-color: #e45028;
@@ -178,7 +194,6 @@ a {
   align-items: center;
   justify-content: center;
   align-items: center;
-  z-index: 10;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -255,6 +270,12 @@ a {
     width: 100%;
     height: 100%; }
 
+.map {
+  width: 100%;
+  flex: 1;
+  background: url("../img/content/map.jpg") center center no-repeat;
+  background-size: cover; }
+
 .main-section {
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -267,14 +288,12 @@ a {
   padding-top: 10px; }
   .main-section:before {
     content: "";
+    width: 100%;
+    height: 100%;
     position: absolute;
     background-image: url("../img/backgrounds/texture.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; }
+    background-size: cover; }
 
 .about {
   background-position: 0 0;
@@ -309,22 +328,14 @@ a {
 
 .about__icon {
   display: inline-block;
-  background-position: 0;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  vertical-align: middle; }
+  width: 97px;
+  height: 89px; }
   .about__icon--fresh {
-    width: 6em;
-    height: 5.5em;
-    background-image: url(../img/icons/meat.svg), none; }
+    fill: #E35028; }
   .about__icon--handmade {
-    width: 5em;
-    height: 5.5em;
-    background-image: url(../img/icons/hand.svg), none; }
+    fill: #F9B43B; }
   .about__icon--natural {
-    width: 5.5em;
-    height: 5em;
-    background-image: url(../img/icons/natural.svg), none; }
+    fill: #8BC03F; }
 
 .about__item-mid {
   margin-top: 33px;
@@ -377,16 +388,16 @@ a {
 .team__accordeon {
   padding-left: 5%; }
 
-.team__list-item {
+.team__accordeon-item {
   margin-bottom: 4%; }
-  .team__list-item.active .team__item-header {
+  .team__accordeon-item--active .team__item-header {
     color: #f9b43b; }
-    .team__list-item.active .team__item-header:before {
+    .team__accordeon-item--active .team__item-header:before {
       transform: rotate(180deg); }
-  .team__list-item.active .team__item-content {
+  .team__accordeon-item--active .team__item-content {
     height: 100%;
     padding-bottom: 6.5%; }
-  .team__list-item:last-child {
+  .team__accordeon-item:last-child {
     margin: 0; }
 
 .team__item-header {
@@ -508,11 +519,54 @@ a {
   position: relative;
   background-color: #2f3234; }
 
-.map {
+.contacts {
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   min-height: 650px;
   position: relative;
-  background-color: #fff; }
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/backgrounds/section_8_bg.jpg"); }
+
+.contacts__address {
+  margin-bottom: 3px;
+  font-family: "Ubuntu";
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.375rem;
+  letter-spacing: -0.0125rem; }
+
+.contacts__phone {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  font-family: "Ubuntu";
+  color: #e45028;
+  font-weight: 700;
+  letter-spacing: -0.05rem; }
+  .contacts__phone:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    background-image: url("../img/icons/phone.svg");
+    transform: translateY(-50%); }
+
+.contacts__link {
+  display: inline-block;
+  margin-left: 16px; }
+  .contacts__link:first-child {
+    margin-left: 0; }
+
+.contacts__icon {
+  vertical-align: middle;
+  fill: rgba(47, 50, 52, 0.9);
+  width: 20px;
+  height: 20px;
+  transition: all .3s; }
+  .contacts__icon:hover {
+    fill: #fff; }

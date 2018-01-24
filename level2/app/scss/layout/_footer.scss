@@ -1,0 +1,14 @@
+.footer {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.footer__left {
+    flex: 1;
+}
+
+.footer__right {
+    @extend .footer__right;
+
+    text-align: right;
+}

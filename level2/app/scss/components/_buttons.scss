@@ -9,17 +9,20 @@
 }
 
 .button--next {
-    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 50%;    
     padding: 0;
     width: rem(30px);
     height: rem(15px);
-    background-image: url("../img/icons/arrow-scroll.svg");
-    background-repeat: no-repeat;
     font-size: 0;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
     transform: translateX(-50%);
+}
+
+.button__icon--arrow-scroll {
+    width: 29px;
+    height: 14px;
+    fill: $color_white;
 }
 
 @mixin set-button-colors($color, $hover_color) {

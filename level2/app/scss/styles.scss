@@ -14,13 +14,13 @@
 @import "layout/header";
 @import "layout/logo";
 @import "layout/nav";
-
-
+@import "layout/footer";
 
 //Ипортируем Стили отдельных компонентов
 @import "components/buttons";
 @import "components/top-slider";
 @import "components/global-menu";
+@import "components/map";
 
 //Ипортируем Персональные стили для страниц
 @import "pages/main-section";
@@ -30,7 +30,7 @@
 @import "pages/slider";
 @import "pages/reviews";
 @import "pages/order";
-@import "pages/map";
+@import "pages/contacts";
 
 
 // @import 'pages/home';

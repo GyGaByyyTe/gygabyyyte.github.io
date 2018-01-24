@@ -78,6 +78,9 @@ a {
     flex-direction: column;
     justify-content: center;
 }
+.container--contacts {
+    @include flex-prop;
+}
 
 .section-title {
     font-family: $font_gagalin,sans-serif;
