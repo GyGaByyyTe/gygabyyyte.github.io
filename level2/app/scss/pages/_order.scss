@@ -1,5 +1,22 @@
 .order {
     @include section-prop;
 
-    background-color: $color_dark;
+    background-image: url("../img/backgrounds/section_7_bg.jpg");
 }
+
+.order__container {
+    @include flex-prop;
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 11%;
+
+    padding-bottom: 13.2%;
+}
+
+.order__form {
+    width: 100%;
+}
+
+

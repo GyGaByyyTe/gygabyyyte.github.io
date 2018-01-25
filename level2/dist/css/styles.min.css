@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Gagalin';
   src: url("../fonts/Gagalin-Regular.woff2") format("woff2"), url("Gagalin-Regular.woff") format("woff");
@@ -88,6 +89,9 @@ a {
   font-family: "Gagalin", sans-serif;
   font-size: 72px;
   font-weight: 400; }
+
+.section-title_color_yellow {
+  color: #f9b43b; }
 
 .header {
   display: flex;
@@ -188,6 +192,14 @@ a {
     background-color: #1f2122;
     border-color: #1f2122; }
 
+.button--clear {
+  margin-left: 22px;
+  padding: 0;
+  text-transform: capitalize;
+  transition: all .3s; }
+  .button--clear:hover {
+    color: #e45028; }
+
 .top-slider {
   display: flex;
   justify-content: space-between;
@@ -269,6 +281,139 @@ a {
     left: 0;
     width: 100%;
     height: 100%; }
+
+.form__elem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start; }
+
+.form__left, .form__right {
+  width: 49%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch; }
+
+.form__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px; }
+  .form__row:last-child {
+    margin-bottom: 0; }
+
+.form__block {
+  flex: 1;
+  margin-right: 20px; }
+  .form__block:last-child {
+    margin-right: 0; }
+
+.form__block-title {
+  font-family: "Ubuntu";
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  transition: all .3s; }
+
+.form__block-input, .form__block-area {
+  padding: 0.25rem 1.3125rem;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  border: 2px solid #fff;
+  color: #2f3234;
+  font-family: "Ubuntu";
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem; }
+  .form__block-input:focus, .form__block-area:focus {
+    border: 2px solid #f9b43b; }
+
+.form__block-area {
+  resize: none; }
+
+/* Радиобаттоны */
+.form__custom-radiobutton {
+  margin-right: 12px;
+  cursor: pointer; }
+
+.form__custom-radio-real {
+  display: none; }
+
+.form__radio-custom {
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  transition: all .3s; }
+
+.form__custom-radio-real:hover ~ .form__block-title {
+  color: #e45028; }
+
+.form__custom-radio-real:hover + .form__radio-custom {
+  border: 1px solid #e45028; }
+
+.form__custom-radio-real:checked + .form__radio-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #e45028;
+  border-radius: 50%;
+  transform: translate(-50%, -50%); }
+
+/* Чекбокс */
+.form__custom-checkbox {
+  margin-right: 12px;
+  cursor: pointer; }
+
+.form__custom-checkbox-real {
+  display: none; }
+
+.form__checkbox-custom {
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  transition: all .3s; }
+
+.form__custom-checkbox-real:hover ~ .form__block-title {
+  color: #e45028; }
+
+.form__custom-checkbox-real:hover + .form__checkbox-custom {
+  border: 1px solid #e45028; }
+
+.form__custom-checkbox-real:checked + .form__checkbox-custom::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 9px;
+  border-right: 3px solid #e45028;
+  border-bottom: 3px solid #e45028;
+  transform-origin: center bottom;
+  transform: rotate(45deg); }
+
+.form__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start; }
 
 .map {
   width: 100%;
@@ -381,7 +526,6 @@ a {
   opacity: 0.93; }
 
 .team__title {
-  color: #f9b43b;
   line-height: 1.2;
   margin-bottom: 10.5%; }
 
@@ -517,7 +661,20 @@ a {
   height: 100vh;
   min-height: 650px;
   position: relative;
-  background-color: #2f3234; }
+  background-image: url("../img/backgrounds/section_7_bg.jpg"); }
+
+.order__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 11%;
+  padding-bottom: 13.2%; }
+
+.order__form {
+  width: 100%; }
 
 .contacts {
   background-position: 0 0;
