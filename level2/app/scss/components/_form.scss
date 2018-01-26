@@ -4,7 +4,7 @@
     align-items: flex-start;
 }
 
-.form__left, .form__right {
+.form__column {
     width: 49%;
 
     @include flex-prop;
@@ -17,7 +17,7 @@
 .form__row {
     @include flex-prop;
 
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
 
     &:last-child {
         margin-bottom: 0;
@@ -26,7 +26,7 @@
 
 .form__block {
     flex: 1;
-    margin-right: 20px;
+    margin-right: rem(20px);
 
     &:last-child {
         margin-right: 0;
@@ -45,9 +45,9 @@
 .form__block-input, .form__block-area {
     padding: rem(4px) rem(21px);
     border: none;
-    border-radius: 5px;
+    border-radius: rem(5px);
     width: 100%;
-    border: 2px solid $color_white;
+    border: rem(2px) solid $color_white;
     color: $color_dark;
     font-family: $font_ubuntu;
     font-size: rem(14px);
@@ -55,7 +55,7 @@
     line-height: rem(24px);
 
     &:focus {
-        border: 2px solid $color_yellow;
+        border: rem(2px) solid $color_yellow;
     }
 }
 
@@ -65,7 +65,7 @@
 
 /* Радиобаттоны */
 .form__custom-radiobutton {
-    margin-right: 12px;
+    margin-right: rem(12px);
     cursor: pointer;
 }
 
@@ -74,11 +74,11 @@
 }
 
 .form__radio-custom {
-    margin-right: 5px;
-    width: 16px;
-    height: 16px;
+    margin-right: rem(5px);
+    width: rem(16px);
+    height: rem(16px);
     background-color: $color_white;
-    border: 1px solid $color_white;
+    border: rem(1px) solid $color_white;
     border-radius: 50%;
     position: relative;
     display: inline-block;
@@ -92,7 +92,7 @@
 }
 
 .form__custom-radio-real:hover + .form__radio-custom {
-    border: 1px solid $color_orange;
+    border: rem(1px) solid $color_orange;
 }
 
 .form__custom-radio-real:checked + .form__radio-custom::before {
@@ -101,15 +101,16 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 8px;
-    height: 8px;
+    width: rem(8px);
+    height: rem(8px);
     background-color: $color_orange;
     border-radius: 50%;
     transform: translate(-50%, -50%);
 }
+
 /* Чекбокс */
 .form__custom-checkbox {
-    margin-right: 12px;
+    margin-right: rem(12px);
     cursor: pointer;
 }
 
@@ -118,11 +119,11 @@
 }
 
 .form__checkbox-custom {
-    margin-right: 5px;
-    width: 16px;
-    height: 16px;
+    margin-right: rem(5px);
+    width: rem(16px);
+    height: rem(16px);
     background-color: $color_white;
-    border: 1px solid $color_white;
+    border: rem(1px) solid $color_white;
     position: relative;
     display: inline-block;
     vertical-align: middle;
@@ -135,22 +136,23 @@
 }
 
 .form__custom-checkbox-real:hover + .form__checkbox-custom {
-    border: 1px solid $color_orange;
+    border: rem(1px) solid $color_orange;
 }
 
 .form__custom-checkbox-real:checked + .form__checkbox-custom::before {
     display: block;
     content: "";
     position: absolute;
-    width: 7px;
-    height: 9px;
-    border-right: 3px solid $color_orange;
-    border-bottom: 3px solid $color_orange;
+    width: rem(7px);
+    height: rem(9px);
+    border-right: rem(3px) solid $color_orange;
+    border-bottom: rem(3px) solid $color_orange;
     transform-origin: center bottom;
     transform: rotate(45deg);
 }
 
 .form__buttons {
     @include flex-prop;
+
     justify-content: flex-start;
 }

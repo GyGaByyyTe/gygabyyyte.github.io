@@ -12,7 +12,7 @@
     &:after {
         display: inline-block;
         vertical-align: middle;
-        margin: 0 12px;
+        margin: 0 rem(12px);
         content: ' ';
 
         @include circle(5px, $color_white);

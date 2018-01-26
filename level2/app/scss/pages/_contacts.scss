@@ -7,7 +7,7 @@
 }
 
 .contacts__address {
-    margin-bottom: 3px;
+    margin-bottom: rem(3px);
     font-family: $font_ubuntu;
     font-size: rem(14px);
     font-weight: 300;
@@ -18,7 +18,7 @@
 .contacts__phone {
     position: relative;
     display: inline-block;
-    padding-left: 20px;
+    padding-left: rem(20px);
     font-family: $font_ubuntu;
     color: $color_orange;
     font-weight: 700;
@@ -29,8 +29,8 @@
         position: absolute;
         top: 50%;
         left: 0;
-        width: 11px;
-        height: 11px;
+        width: rem(11px);
+        height: rem(11px);
         background-image: url("../img/icons/phone.svg");
         transform: translateY(-50%);
     }
@@ -38,7 +38,7 @@
 
 .contacts__link {
     display: inline-block;
-    margin-left: 16px;
+    margin-left: rem(16px);
 
     &:first-child {
         margin-left: 0;
@@ -48,8 +48,8 @@
 .contacts__icon {
     vertical-align: middle;
     fill: rgba($color_dark, 0.9);
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
 
     @include hover-anim-one(fill, $color_white);
 

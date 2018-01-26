@@ -1,0 +1,74 @@
+.menu {
+    @include section-prop;
+
+    background-image: url("../img/backgrounds/section_5_bg.jpg");
+}
+
+.menu__container {
+    height: 100%;
+    padding-left: 8.5%;
+
+    @include flex-prop;
+
+    justify-content: space-between;
+}
+
+.menu__title {
+    margin-top: 9%;
+    align-self: flex-start;
+}
+
+.menu__accordeon {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu__accordeon-item {
+    display: flex;
+
+    &--active {
+        .menu__item-header {
+            color: $color_yellow;
+        }
+
+        .menu__item-content {
+            width: 48vw;
+        }
+    }    
+}
+
+.menu__accordeon-trigger {
+    display: block;
+    width: rem(80px);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.menu__item-header {
+    position: absolute;
+    left: 20%;
+    top: 94%;
+    font-family: $font_gagalin, sans-serif;
+    font-size: rem(40px);
+    font-weight: 400;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+}
+
+.menu__item-content {
+    width: 0;
+    background-color: rgba($color: $color-dark, $alpha: 0.9);
+}
+
+.menu__item-desc {
+    padding: 10% 6%;
+    font-family: $font_ubuntu;
+    font-size: rem(14px);
+    font-weight: 300;
+    line-height: rem(24px);
+    letter-spacing: rem(-0.3px);
+}

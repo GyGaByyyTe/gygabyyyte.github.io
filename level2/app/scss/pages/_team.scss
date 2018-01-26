@@ -13,15 +13,12 @@
     padding: 8.2% 5% 0 8.8%;
     background-color: $color_dark;
     opacity: 0.93;
+
 }
 
 .team__title {
     line-height: 1.2;
     margin-bottom: 10.5%;
-}
-
-.team__accordeon {
-    padding-left: 5%;
 }
 
 .team__accordeon-item {
@@ -38,7 +35,7 @@
 
         .team__item-content {
             height: 100%;
-            padding-bottom: 6.5%;
+            padding-bottom: 6%;
         }
     }
 
@@ -48,7 +45,8 @@
 }
 
 .team__item-header {
-    margin-bottom: 5%;
+    padding-left: 5%;
+    margin-bottom: 4.5%;
     display: inline-block;
     font-family: $font_gagalin, sans-serif;
     font-size: rem(14px);
@@ -59,10 +57,10 @@
         content: "";
         position: absolute;
         top: 37%;
-        left: -20px;
-        border-top: 7px solid $color-yellow;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
+        left: -3%;
+        border-top: rem(7px) solid $color-yellow;
+        border-left: rem(5px) solid transparent;
+        border-right: rem(5px) solid transparent;
         transform-origin: center;
     }
 }
@@ -71,11 +69,12 @@
     display: flex;
     height: 0;
     overflow: hidden;
+    padding-left: 5%;
 }
 
 .team__item-img {
-    width: 100px;
-    height: 100px;
+    width: rem(100px);
+    height: rem(100px);
     background-position: 70%;
     background-size: cover;
     border-radius: 50%;

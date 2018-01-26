@@ -26,8 +26,8 @@
 }
 
 .top-slider__desc {
-    padding-top: 25px;
-    margin-left: 15px;
+    padding-top: rem(25px);
+    margin-left: rem(15px);
     flex: 1;
 }
 
@@ -37,10 +37,10 @@
 }
 
 .top-slider__text {
-    margin-top: 20px;
+    margin-top: rem(20px);
     color: $color_white;
     font-family: $font_lifehack,sans-serif;
-    font-size: 65px;
+    font-size: rem(65px);
     font-weight: 500;
     letter-spacing: -1.63px;
     line-height: rem(62px);

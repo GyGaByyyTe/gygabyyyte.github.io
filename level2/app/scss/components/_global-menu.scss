@@ -1,17 +1,17 @@
 .global-menu {
     position: fixed;
-    top: 90px;
-    right: 50px;
+    top: rem(90px);
+    right: rem(50px);
 }
 
 .global-menu__item {
-    margin-bottom: 5px;
+    margin-bottom: rem(5px);
 }
 
 .global-menu__link {
     display: block;
-    width: 16px;
-    height: 16px;
+    width: rem(16px);
+    height: rem(16px);
     cursor: pointer;
     position: relative;
 
@@ -32,7 +32,7 @@
         left: 50%;
         width: 0;
         height: 0;
-        border: 1px solid $color_white;
+        border: rem(1px) solid $color_white;
         border-radius: 50%;
 
         @include transition;

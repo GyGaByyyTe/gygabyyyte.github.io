@@ -50,8 +50,8 @@
 
 .reviews__text {
     line-height: 1.76;
-    margin-top: 20px;
-    margin-bottom: 14px;
+    margin-top: rem(20px);
+    margin-bottom: rem(14px);
     font-family: $font_ubuntu, sans-serif;
     font-size: rem(14px);
     font-weight: 300;

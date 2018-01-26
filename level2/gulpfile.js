@@ -10,6 +10,7 @@ var browserSync = require("browser-sync");
 var sass = require("gulp-sass");
 var cssnano = require("gulp-cssnano");
 var rename = require("gulp-rename");
+var autoprefixer = require('gulp-autoprefixer');
 //склейка и сжатие скриптов js
 var concat = require("gulp-concat");
 var uglify = require("gulp-uglify");
@@ -65,6 +66,10 @@ var newer = require("gulp-newer");
         .pipe(concat(css_res))
         // .pipe(cssnano())
         // .pipe(sourcemaps.write())
+        .pipe(autoprefixer({
+          browsers: ['last 2 versions'],
+          cascade: false
+        }))        
         .pipe(gulp.dest(css_dest))
         .pipe(browserSync.reload({ stream: true }));
     });

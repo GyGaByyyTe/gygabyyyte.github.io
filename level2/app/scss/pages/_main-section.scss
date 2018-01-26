@@ -2,8 +2,8 @@
     @include section-prop;
 
     background-image: url("../img/backgrounds/section_1_bg.jpg");
-    padding-bottom: 40px;
-    padding-top: 10px;  
+    padding-bottom: rem(40px);
+    padding-top: rem(10px);  
 
     &:before {
         content: "";

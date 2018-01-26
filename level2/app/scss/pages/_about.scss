@@ -3,14 +3,14 @@
 
     background-image: url("../img/backgrounds/section_2_bg.jpg");
     color: $color_dark;
-    padding-bottom: 35px;
+    padding-bottom: rem(35px);
 }
 
 .about__list {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 40px;
+    margin-top: rem(40px);
 }
 
 .about__item {
@@ -23,16 +23,16 @@
 }
 
 .about__item-top {
-    padding-top: 3px;
+    padding-top: rem(3px);
     width: 100%;
-    height: 90px;
+    height: rem(90px);
     text-align: center;
 }
 
 .about__icon {
     display: inline-block;
-    width: 97px;
-    height: 89px;
+    width: rem(97px);
+    height: rem(89px);
 
     &--fresh {
         fill: #E35028;
@@ -48,7 +48,7 @@
 }
 
 .about__item-mid {
-    margin-top: 33px;
+    margin-top: rem(33px);
     font-family: $font_lifehack, serif;
     font-size: rem(24px);
     font-weight: 500;
@@ -56,7 +56,7 @@
 }
 
 .about__item-bot {
-    margin-top: 15px;
+    margin-top: rem(15px);
     opacity: 0.8;
     font-family: $font_ubuntu, sans-serif;
     font-size: rem(14px);
