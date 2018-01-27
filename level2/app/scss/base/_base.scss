@@ -12,6 +12,17 @@
     outline: none;
 }
 
+html {
+    @include tablets {
+        font-size: 15px;
+    }
+
+
+    @include phones {
+        font-size: 14px;
+    }
+}
+
 body, html {
     font-family: sans-serif;
     cursor: default;
@@ -71,6 +82,20 @@ a {
     margin: 0 auto;
     height: 100%;
     position: relative;
+
+    @include tablets {
+        padding-right: 2.5%;
+        padding-left: 3.5%;
+    }
+}
+
+.container--main {
+    padding-bottom: rem(40px);
+    padding-top: 1%;
+
+    @include tablets {
+        padding-top: 2%;
+    }
 }
 
 .container--about {
@@ -79,9 +104,11 @@ a {
     flex-direction: column;
     justify-content: center;
 }
+
 .container--contacts {
     @include flex-prop;
 }
+
 .container--order {
     @include flex-prop;
 
@@ -89,12 +116,16 @@ a {
     justify-content: space-between;
     align-items: center;
     padding-top: 11%;
-
     padding-bottom: 13.2%;
+
+    @include tablets {
+        padding: 5% 0;
+        justify-content: space-around;
+    }
 }
 
 .section-title {
-    font-family: $font_gagalin,sans-serif;
+    font-family: $font_gagalin, sans-serif;
     font-size: rem(72px);
     font-weight: 400;
 }

@@ -2,6 +2,11 @@
     @include flex-prop;
 
     align-items: flex-start;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .form__column {
@@ -12,6 +17,10 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
+
+    @include tablets {
+        width: 63%;
+    }
 }
 
 .form__row {
@@ -61,6 +70,7 @@
 
 .form__block-area {
     resize: none;
+    overflow: hidden;
 }
 
 /* Радиобаттоны */

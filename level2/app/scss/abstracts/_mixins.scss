@@ -5,7 +5,7 @@
 }
 
 @mixin section-prop {
-    background-position: 0 0;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -68,4 +68,16 @@
 //Из первого урока Юрия по SCSS
 @function rem($px) {
     @return $px / 16px + 0rem;
+}
+
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width: $phones) {
+        @content;
+    }
 }

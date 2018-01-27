@@ -1,0 +1,23 @@
+.hamburger {
+    display: none;
+    position: relative;
+    width: rem(24px);
+    font-size: 0;
+
+    @include tablets {
+        display: block;
+        margin-left: 3rem;
+    }
+
+    &:before {
+        content: '';
+        box-shadow: 0 8px $color_white, 0 17px $color_white;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background: $color_white;
+        top: 15%;
+        left: -55%;
+        border-radius: 10px;
+    }
+}

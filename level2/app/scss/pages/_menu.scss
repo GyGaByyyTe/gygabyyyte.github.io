@@ -11,6 +11,10 @@
     @include flex-prop;
 
     justify-content: space-between;
+
+    @include tablets {
+        padding-left: 3.5%;
+    }
 }
 
 .menu__title {
@@ -19,9 +23,17 @@
 }
 
 .menu__accordeon {
-    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 29%;
     display: flex;
     justify-content: flex-end;
+
+    @include tablets {
+        left: 0;
+    }
 }
 
 .menu__accordeon-item {
@@ -33,7 +45,7 @@
         }
 
         .menu__item-content {
-            width: 48vw;
+            width: 100%
         }
     }    
 }
@@ -45,11 +57,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    @include tablets {
+        width: 4rem;
+    }
 }
 
 .menu__item-header {
     position: absolute;
-    left: 20%;
+    left: 18%;
     top: 94%;
     font-family: $font_gagalin, sans-serif;
     font-size: rem(40px);
@@ -57,6 +73,10 @@
     transform-origin: 0 0;
     transform: rotate(-90deg);
     white-space: nowrap;
+
+    @include tablets {
+        left: 10%;
+    }
 }
 
 .menu__item-content {
