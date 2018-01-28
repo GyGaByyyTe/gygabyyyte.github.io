@@ -20,6 +20,7 @@
 
     @include tablets {
         width: 63%;
+        margin-top: 0.45rem;
     }
 }
 
@@ -30,6 +31,14 @@
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    &--buttons {
+        justify-content: flex-start;
+
+        @include tablets {
+            margin-top: 1.3rem;
+        }
     }
 }
 
@@ -49,6 +58,10 @@
     line-height: 1.5rem;
 
     @include transition;
+
+    @include tablets {
+        line-height: 2rem;
+    }
 }
 
 .form__block-input, .form__block-area {

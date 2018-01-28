@@ -11,6 +11,11 @@
     height: 100vh;
     min-height: 650px;
     position: relative;
+
+    @include tablets {
+        min-height: 1024px;
+    }
+
 }
 
 @mixin font-ubuntu {

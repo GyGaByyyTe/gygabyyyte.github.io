@@ -103,6 +103,10 @@ a {
 
     flex-direction: column;
     justify-content: center;
+
+    @include tablets {
+        padding-bottom: 17rem;
+    }
 }
 
 .container--contacts {
@@ -113,14 +117,14 @@ a {
     @include flex-prop;
 
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-top: 11%;
     padding-bottom: 13.2%;
 
     @include tablets {
-        padding: 5% 0;
-        justify-content: space-around;
+        padding: 9rem 0;
+        justify-content: flex-start;
     }
 }
 

@@ -13,6 +13,7 @@
     @include tablets {
         flex-direction: column;
         text-align: center;
+        top: 47%;
     }
 }
 
@@ -30,8 +31,7 @@
     width: 50vw;
 
     @include tablets {
-        width: 50vmin;
-        height: 50vmin;
+        width: 60%;
     }
 }
 
@@ -42,8 +42,7 @@
 
     @include tablets {
         width: 70%;
-        margin: 0;
-        padding: 0;
+        margin-left: 0;
     }
 
 }
@@ -63,6 +62,6 @@
     line-height: rem(62px);
 
     @include tablets {
-        margin-top: 0;
+        margin-top: 5%;
     }
 }

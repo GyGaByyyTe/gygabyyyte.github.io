@@ -20,6 +20,10 @@
 .menu__title {
     margin-top: 9%;
     align-self: flex-start;
+
+    @include tablets {
+        margin-top: 6.5rem;
+    }
 }
 
 .menu__accordeon {
@@ -59,7 +63,7 @@
     position: relative;
 
     @include tablets {
-        width: 4rem;
+        width: 5.35rem;
     }
 }
 
@@ -73,10 +77,6 @@
     transform-origin: 0 0;
     transform: rotate(-90deg);
     white-space: nowrap;
-
-    @include tablets {
-        left: 10%;
-    }
 }
 
 .menu__item-content {

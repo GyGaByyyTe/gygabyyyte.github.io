@@ -13,11 +13,15 @@
     border-radius: rem(3px);
     cursor: pointer;
     padding: rem(10px) rem(15px);
+
+    @include tablets {
+        padding: rem(10px) rem(18px);
+    }
 }
 
 .button--next {
     position: absolute;
-    bottom: 6%;
+    bottom: 5%;
     left: 50%;
     padding: 0;
     width: rem(30px);
