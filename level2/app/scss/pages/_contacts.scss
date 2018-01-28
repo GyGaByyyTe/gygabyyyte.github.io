@@ -7,12 +7,19 @@
 }
 
 .contacts__address {
-    margin-bottom: rem(3px);
+    padding-bottom: rem(3px);
     font-family: $font_ubuntu;
-    font-size: rem(14px);
     font-weight: 300;
     line-height: rem(22px);
     letter-spacing: rem(-0.2px);
+
+    @include tablets {
+        padding-bottom: rem(8px);
+    }
+
+    @include phones {
+        padding: 0.8rem 0;
+    }
 }
 
 .contacts__phone {
@@ -42,15 +49,21 @@
 
     &:first-child {
         margin-left: 0;
-    }    
+    }
 }
 
 .contacts__icon {
     vertical-align: middle;
     fill: rgba($color_dark, 0.9);
-    width: rem(20px);
-    height: rem(20px);
+    // width: rem(20px);
+    // height: rem(20px);
+    width: 1.3rem;
+    height: 1.3rem;
 
     @include hover-anim-one(fill, $color_white);
 
+    @include phones {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
 }

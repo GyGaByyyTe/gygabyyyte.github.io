@@ -9,6 +9,10 @@
         margin-left: 3rem;
     }
 
+    @include phones {
+        width: 2rem;
+    }
+
     &:before {
         content: '';
         box-shadow: 0 8px $color_white, 0 17px $color_white;

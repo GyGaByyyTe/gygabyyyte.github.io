@@ -53,7 +53,7 @@
                     </div>
                     <div class="header__right">
                         <a href="#order" class="button button--order">Заказать</a>
-                        <a href="#" class="hamburger">Кнопка меню</a>                        
+                        <a href="#" class="hamburger">Кнопка меню</a>
                     </div>
                 </header>
                 <div class="top-slider">
@@ -84,8 +84,10 @@
                                 <use xlink:href="img/icons/sprite.svg#meat"></use>
                             </svg>
                         </div>
-                        <div class="about__item-mid">100% свежее мясо</div>
-                        <div class="about__item-bot">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+                        <div class="about__item-text">
+                            <div class="about__item-mid">100% свежее мясо</div>
+                            <div class="about__item-bot">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+                        </div>
                     </li>
                     <li class="about__item">
                         <div class="about__item-top">
@@ -93,9 +95,11 @@
                                 <use xlink:href="img/icons/sprite.svg#hand"></use>
                             </svg>
                         </div>
-                        <div class="about__item-mid">Ручная сборка</div>
-                        <div class="about__item-bot">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие
-                            притягивает сюжетный реформаторский пафос.</div>
+                        <div class="about__item-text">
+                            <div class="about__item-mid">Ручная сборка</div>
+                            <div class="about__item-bot">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие
+                                притягивает сюжетный реформаторский пафос.</div>
+                        </div>
                     </li>
                     <li class="about__item">
                         <div class="about__item-top">
@@ -103,8 +107,10 @@
                                 <use xlink:href="img/icons/sprite.svg#natural"></use>
                             </svg>
                         </div>
-                        <div class="about__item-mid">Натуральные ингредиенты</div>
-                        <div class="about__item-bot">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
+                        <div class="about__item-text">
+                            <div class="about__item-mid">Натуральные ингредиенты</div>
+                            <div class="about__item-bot">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -173,7 +179,7 @@
             <div class="menu__container">
                 <h2 class="menu__title section-title">Меню</h2>
                 <ul class="menu__accordeon">
-                    <li class="menu__accordeon-item menu__accordeon-item">
+                    <li class="menu__accordeon-item menu__accordeon-item--octive">
                         <a href="#" class="menu__accordeon-trigger" style="background-image:url(img/backgrounds/section_5_bg_3.jpg);">
                             <div class="menu__item-header">Для мясоедов</div>
                         </a>
@@ -345,7 +351,8 @@
                                     <div class="form__block-title">Квартира</div>
                                     <input type="text" class="form__block-input">
                                 </label>
-                                <label class="form__block">
+                                <!-- временно отключается через CSS на мобилках -->
+                                <label class="form__block form__block--phones_disabled">
                                     <div class="form__block-title">Этаж</div>
                                     <input type="text" class="form__block-input">
                                 </label>
@@ -358,7 +365,7 @@
                                     <textarea name="" id="" cols="30" rows="4" class="form__block-area"></textarea>
                                 </label>
                             </div>
-                            <div class="form__row">
+                            <div class="form__row form__row--phones_text_center">
                                 <div class="form__custom">
                                     <label class="form__custom-radiobutton">
                                         <input class="form__custom-radio-real" type="radio" name="radio-test">
@@ -372,14 +379,14 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="form__row">
+                            <div class="form__row form__row--phones_text_center">
                                 <label class="form__custom-checkbox">
                                     <input class="form__custom-checkbox-real" type="checkbox" name="chbox-test">
                                     <span class="form__checkbox-custom"></span>
                                     <span class="form__block-title">Не перезванивать</span>
                                 </label>
                             </div>
-                            <div class="form__buttons">
+                            <div class="form__row form__row--buttons">
                                 <a href="#" class="button button--order">Заказать</a>
                                 <a href="#" class="button button--clear">Очистить</a>
                             </div>

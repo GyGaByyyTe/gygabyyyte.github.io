@@ -22,6 +22,12 @@
         width: 63%;
         margin-top: 0.45rem;
     }
+
+
+    @include phones {
+        width: 97%;
+        margin-top: 0.7rem;
+    }
 }
 
 .form__row {
@@ -39,15 +45,40 @@
         @include tablets {
             margin-top: 1.3rem;
         }
+
+
+        @include phones {
+            justify-content: center;
+        }
+    }
+
+    @include phones {
+        margin-bottom: 1.2rem;
+    }
+
+
+    &--phones_text_center {
+        @include phones {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 1.2rem;
+        }
     }
 }
 
 .form__block {
     flex: 1;
-    margin-right: rem(20px);
+    margin-left: rem(20px);
 
-    &:last-child {
-        margin-right: 0;
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &--phones_disabled {
+        @include phones {
+            display: none;
+        }
     }
 }
 
@@ -60,6 +91,12 @@
     @include transition;
 
     @include tablets {
+        line-height: 2rem;
+    }
+
+
+    @include phones {
+        font-size: 1.1rem;
         line-height: 2rem;
     }
 }
@@ -79,11 +116,19 @@
     &:focus {
         border: rem(2px) solid $color_yellow;
     }
+
+    @include phones {
+        font-size: 1.6rem;
+    }
 }
 
 .form__block-area {
     resize: none;
     overflow: hidden;
+
+    @include phones {
+        height: 8.5rem;
+    }
 }
 
 /* Радиобаттоны */

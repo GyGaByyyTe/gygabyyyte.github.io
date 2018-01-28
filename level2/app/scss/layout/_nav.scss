@@ -2,6 +2,7 @@
     @include font-ubuntu;
 
     margin-right: rem(18px);
+    padding-bottom: 0.5rem;
 
     @include tablets {
         display: none;

@@ -19,7 +19,7 @@ html {
 
 
     @include phones {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -105,12 +105,26 @@ a {
     justify-content: center;
 
     @include tablets {
-        padding-bottom: 17rem;
+        padding-bottom: 9rem;
+    }
+
+
+    @include phones {
+        padding-top: 7rem;
     }
 }
 
 .container--contacts {
     @include flex-prop;
+
+    font-size: rem(14px);
+
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 1.05rem;
+    }
 }
 
 .container--order {
@@ -126,12 +140,26 @@ a {
         padding: 9rem 0;
         justify-content: flex-start;
     }
+
+
+    @include phones {
+        padding: 4.3rem 0;
+    }
 }
 
 .section-title {
     font-family: $font_gagalin, sans-serif;
     font-size: rem(72px);
     font-weight: 400;
+
+    @include tablets {
+        text-align: center;
+    }
+
+
+    @include phones {
+        font-size: 3.8rem;
+    }
 }
 
 .section-title_color_yellow {

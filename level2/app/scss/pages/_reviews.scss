@@ -52,12 +52,20 @@
         padding-right: 3.4rem;
         padding-top: 2.1rem;
     }
+
+    @include phones {
+        padding-top: 3rem;
+    }
 }
 
 .reviews__person {
     font-family: $font_gagalin, sans-serif;
     font-size: rem(14px);
     font-weight: 400;
+
+    @include phones {
+        font-size: 1.8rem;
+    }
 }
 
 .reviews__text {
@@ -71,5 +79,9 @@
     @include tablets {
         margin-top: 1rem;
         margin-bottom: 1.5rem;
+    }
+
+    @include phones {
+        font-size: 0;
     }
 }

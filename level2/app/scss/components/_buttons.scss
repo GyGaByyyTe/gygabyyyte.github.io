@@ -15,6 +15,7 @@
     padding: rem(10px) rem(15px);
 
     @include tablets {
+        font-size: 1rem;
         padding: rem(10px) rem(18px);
     }
 }
@@ -28,6 +29,10 @@
     height: rem(15px);
     font-size: 0;
     transform: translateX(-50%);
+
+    @include tablets {
+        bottom: 4%;
+    }
 }
 
 .button__icon--arrow-scroll {

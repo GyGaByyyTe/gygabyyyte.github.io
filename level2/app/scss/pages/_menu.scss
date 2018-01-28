@@ -24,6 +24,12 @@
     @include tablets {
         margin-top: 6.5rem;
     }
+
+
+    @include phones {
+        margin-left: 3.5rem;
+        margin-top: 3.5rem;
+    }
 }
 
 .menu__accordeon {
@@ -49,9 +55,9 @@
         }
 
         .menu__item-content {
-            width: 100%
+            width: 100%;
         }
-    }    
+    }
 }
 
 .menu__accordeon-trigger {
@@ -91,4 +97,8 @@
     font-weight: 300;
     line-height: rem(24px);
     letter-spacing: rem(-0.3px);
+
+    @include phones {
+        font-size: 1.1rem;
+    }
 }

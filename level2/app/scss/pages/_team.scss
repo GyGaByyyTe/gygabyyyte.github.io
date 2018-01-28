@@ -17,7 +17,11 @@
     @include tablets {
         left: 0;
         text-align: center;
-        padding-top: 7rem;
+        padding-top: 13.5rem;
+    }
+
+    @include phones {
+        padding-top: 10.5rem;
     }
 }
 
@@ -26,8 +30,12 @@
     margin-bottom: 10.5%;
 
     @include tablets {
-        margin-bottom: 8.3rem;
+        margin-bottom:  2.8rem;
     }    
+
+    @include phones {
+        margin-bottom: 2rem;
+    }
 }
 
 .team__accordeon-item {
@@ -37,6 +45,9 @@
         margin-bottom: 1rem;
     }
 
+    @include phones {
+        margin-bottom: 1.4rem;
+    }
 
     &--active {
         .team__item-header {
@@ -56,6 +67,10 @@
                 align-items: center;
                 padding-left: 0;
                 padding-bottom: 1.5rem;
+            }
+
+            @include phones {
+                padding-bottom: 1rem;
             }
         }
     }
@@ -89,6 +104,10 @@
         font-size: rem(25px);
         margin-bottom: 1rem;        
     }
+
+    @include phones {
+        font-size: 1.8rem;
+    }
 }
 
 .team__item-content {
@@ -104,6 +123,16 @@
     background-position: 70%;
     background-size: cover;
     border-radius: 50%;
+
+    @include tablets {
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+
+    @include phones {
+        width: 7.5rem;
+        height: 7.5rem;        
+    }
 }
 
 .team__item-desc {
@@ -114,6 +143,11 @@
 
     @include tablets {
         margin-left: 0;
+    }
+
+    @include phones {
+        width: 87%;
+        font-size: 1rem;
     }
 }
 
@@ -126,9 +160,15 @@
         margin-top: 5%;
     }
 
+    @include phones {
+        margin-top: 8%;
+    }
 }
 
 .team__item-text {
     font-weight: 300;
     line-height: 1.5rem;
+    @include phones {
+        line-height: 1.7rem;
+    }
 }
