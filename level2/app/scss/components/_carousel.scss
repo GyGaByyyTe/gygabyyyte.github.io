@@ -1,0 +1,52 @@
+.carousel {
+    max-width: 1010px;
+    width: 95%;
+
+    @include flex-prop;
+
+    align-content: center;
+}
+
+.carousel__viewport {
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+    user-select: none;
+    position: relative;
+}
+
+.carousel__wrapper {
+    position: relative;
+    width: 100% * $slide_count;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+
+    @include flex-prop;
+}
+
+.carousel__btn {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 50%;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.carousel__btn--prev {
+    left: 0;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.carousel__btn--next {
+    right: 0;
+    transform: translateY(-50%) rotate(-90deg);
+}

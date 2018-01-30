@@ -42,6 +42,7 @@
 }
 
 .button--order {
+    color: $color_white;
     @include set-button-colors($color_orange, $color_orange_hover);
 }
 
@@ -53,6 +54,10 @@
 }
 
 .button--clear {
+    background-color: transparent;
+    border-color: transparent;
+    color: $color_white;
+    font-size: rem(14px);
     margin-left: rem(22px);
     padding: 0;
     text-transform: capitalize;

@@ -1,0 +1,123 @@
+.slide {
+    width: 100% / $slide_count;
+    height: 100%;
+
+    @include flex-prop;
+
+    position: relative;
+}
+
+.slide__left {
+    width: 50%;
+}
+
+.slide__image {
+    text-align: right;
+    width: 100%;
+}
+
+.slide__composition {
+    position: absolute;
+    top: 2%;
+    left: 3.5%;
+    width: rem(90px);
+    height: rem(90px);
+    background-color: rgba($color: $color_orange, $alpha: 0.4);
+    border-radius: 5%;
+}
+
+.slide__icon {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    fill: $color_white;
+
+    &--composition {
+        width: rem(46px);
+        height: rem(44px);
+        transform: translate(-50%, -70%);
+    }
+
+    &--nutrition {
+        width: rem(60px);
+        height: rem(60px);
+        top: 0;
+        transform: translate(-50%, 0);
+    }
+}
+
+.slide_composition-text {
+    display: inline-block;
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: "Gagalin";
+    font-size: rem(14px);
+    font-weight: 400;
+}
+
+.slide__nutrition {
+    position: absolute;
+    bottom: 1%;
+    left: 3.5%;
+    width: rem(60px);
+    height: rem(80px);
+    opacity: .5;
+}
+
+.slide_nutrition-text {
+    display: inline-block;
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: "Gagalin";
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.slide__right {
+    width: 50%;
+    height: 78%;
+    padding-left: 1%;
+    text-align: left;
+}
+
+.slide__title {
+    width: 80%;
+    line-height: rem(63.93px);
+}
+
+.slide__desc {
+    width: 90%;
+    margin-top: 7%;
+    font-size: rem(14px);
+    font-weight: 300;
+    line-height: rem(23.97px);
+}
+.slide__order {
+    margin-top: 9%;
+    vertical-align: middle;
+}
+.slide__price {
+    font-family: $font_gagalin;
+    color: $color_orange;
+    font-size: rem(72px);
+    letter-spacing: rem(-1.79px);
+    line-height: rem(28.08px);
+}
+.slide__price-number {
+    font-size: rem(30px);
+    font-weight: 400;
+    letter-spacing: rem(-0.75px);
+}
+.slide__button {
+    vertical-align: super;
+}
