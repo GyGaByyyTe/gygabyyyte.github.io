@@ -5,6 +5,10 @@
     @include flex-prop;
 
     align-content: center;
+
+    @include tablets {
+        padding: 0;
+    }
 }
 
 .carousel__viewport {
@@ -13,6 +17,11 @@
     overflow: hidden;
     user-select: none;
     position: relative;
+
+    @include tablets {
+        width: 75%;
+        height: 53rem;
+    }
 }
 
 .carousel__wrapper {

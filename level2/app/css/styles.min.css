@@ -294,13 +294,34 @@ a {
   -ms-flex-align: center;
   align-items: center;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .slide {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .slide__left {
   width: 50%; }
+  @media screen and (max-width: 768px) {
+    .slide__left {
+      width: 100%;
+      height: 50%;
+      padding-top: 15%; } }
 
 .slide__image {
   text-align: right;
   width: 100%; }
+  @media screen and (max-width: 768px) {
+    .slide__image {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      text-align: center;
+      height: 100%; } }
 
 .slide__composition {
   position: absolute;
@@ -310,6 +331,9 @@ a {
   height: 5.625rem;
   background-color: rgba(228, 80, 40, 0.4);
   border-radius: 5%; }
+  @media screen and (max-width: 768px) {
+    .slide__composition {
+      left: 4%; } }
 
 .slide__icon {
   position: relative;
@@ -351,6 +375,11 @@ a {
   width: 3.75rem;
   height: 5rem;
   opacity: .5; }
+  @media screen and (max-width: 768px) {
+    .slide__nutrition {
+      left: initial;
+      top: 0;
+      right: 4%; } }
 
 .slide_nutrition-text {
   display: inline-block;
@@ -372,10 +401,18 @@ a {
   padding-bottom: 7%;
   padding-top: 5%;
   text-align: left; }
+  @media screen and (max-width: 768px) {
+    .slide__right {
+      text-align: center;
+      width: 100%;
+      padding: 5% 0 0 0; } }
 
 .slide__title {
   width: 80%;
   line-height: 3.99562rem; }
+  @media screen and (max-width: 768px) {
+    .slide__title {
+      width: 100%; } }
 
 .slide__desc {
   width: 90%;
@@ -383,6 +420,11 @@ a {
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.49812rem; }
+  @media screen and (max-width: 768px) {
+    .slide__desc {
+      width: 100%;
+      font-size: 0.93rem;
+      line-height: 1.598rem; } }
 
 .slide__order {
   margin-top: 9%;
@@ -417,6 +459,9 @@ a {
   align-items: center;
   -ms-flex-line-pack: center;
   align-content: center; }
+  @media screen and (max-width: 768px) {
+    .carousel {
+      padding: 0; } }
 
 .carousel__viewport {
   width: 93.5%;
@@ -427,6 +472,10 @@ a {
   -ms-user-select: none;
   user-select: none;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .carousel__viewport {
+      width: 75%;
+      height: 53rem; } }
 
 .carousel__wrapper {
   position: relative;
