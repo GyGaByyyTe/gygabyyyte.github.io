@@ -19,7 +19,7 @@ function nextSlide() {
         $('.carousel__wrapper').css('transform', 'translate(0, 0)');
         slideNow = 1;
     } else {
-        translateWidth = -$('.carousel__viewport').width() * (slideNow);
+        translateWidth = Math.ceil(-$('.carousel__viewport').width() * (slideNow));
         $('.carousel__wrapper').css({
             'transform': 'translate(' + translateWidth + 'px, 0)',
             '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',

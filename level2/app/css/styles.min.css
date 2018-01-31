@@ -304,8 +304,8 @@ a {
 
 .slide__composition {
   position: absolute;
-  top: 2%;
-  left: 3.5%;
+  top: 0;
+  left: 0;
   width: 5.625rem;
   height: 5.625rem;
   background-color: rgba(228, 80, 40, 0.4);
@@ -346,8 +346,8 @@ a {
 
 .slide__nutrition {
   position: absolute;
-  bottom: 1%;
-  left: 3.5%;
+  bottom: 0;
+  left: 0;
   width: 3.75rem;
   height: 5rem;
   opacity: .5; }
@@ -369,6 +369,8 @@ a {
   width: 50%;
   height: 78%;
   padding-left: 1%;
+  padding-bottom: 7%;
+  padding-top: 5%;
   text-align: left; }
 
 .slide__title {
@@ -377,7 +379,7 @@ a {
 
 .slide__desc {
   width: 90%;
-  margin-top: 7%;
+  margin-top: 10%;
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.49812rem; }
@@ -417,8 +419,8 @@ a {
   align-content: center; }
 
 .carousel__viewport {
-  width: 100%;
-  height: 75%;
+  width: 93.5%;
+  margin: 0 auto;
   overflow: hidden;
   -webkit-user-select: none;
   -moz-user-select: none;
