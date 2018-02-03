@@ -2,4 +2,5 @@
     @include section-prop;
 
     background-color: $color_yellow;
+    background-image: linear-gradient(to top, $color_yellow 0%, #eb8c38 48%, $color_yellow 74%, $color_yellow 100%);
 }

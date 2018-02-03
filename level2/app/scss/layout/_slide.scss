@@ -19,6 +19,12 @@
         height: 50%;
         padding-top: 15%;
     }
+
+
+    @include phones {
+        padding-top: 25%;
+        height: 54%;
+    }
 }
 
 .slide__image {
@@ -31,6 +37,10 @@
         text-align: center;
         height: 100%;
     }
+}
+
+.slide__img {
+    margin: 0 auto;
 }
 
 .slide__composition {
@@ -46,6 +56,12 @@
         left: 4%;
     }
 
+
+    @include phones {
+        left: 0;
+        width: 7rem;
+        height: 7rem;
+    }
 }
 
 .slide__icon {
@@ -61,6 +77,11 @@
         width: rem(46px);
         height: rem(44px);
         transform: translate(-50%, -70%);
+
+        @include phones {
+            width: 3.6rem;
+            height: 3.6rem;
+        }
     }
 
     &--nutrition {
@@ -68,6 +89,11 @@
         height: rem(60px);
         top: 0;
         transform: translate(-50%, 0);
+
+        @include phones {
+            width: 4.5rem;
+            height: 4.5rem;
+        }
     }
 }
 
@@ -81,6 +107,10 @@
     font-family: "Gagalin";
     font-size: rem(14px);
     font-weight: 400;
+
+    @include phones {
+        font-size: 1.1rem;
+    }
 }
 
 .slide__nutrition {
@@ -96,6 +126,13 @@
         top: 0;
         right: 4%;
     }
+
+
+    @include phones {
+        width: 5rem;
+        height: 7rem;
+        right: 0;
+    }
 }
 
 .slide_nutrition-text {
@@ -109,6 +146,12 @@
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 2rem;
+
+    @include phones {
+        bottom: 5%;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
 }
 
 .slide__right {
@@ -123,6 +166,11 @@
         text-align: center;
         width: 100%;
         padding: 5% 0 0 0;
+    }
+
+
+    @include phones {
+        padding-top: 3%;
     }
 }
 
@@ -144,26 +192,50 @@
 
     @include tablets {
         width: 100%;
-        font-size: 0.93rem;;
+        font-size: 0.93rem;
         line-height: 1.598rem;
     }
+
+
+    @include phones {
+        margin: 6% auto 0;
+        width: 94%;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+    }
 }
+
 .slide__order {
     margin-top: 9%;
     vertical-align: middle;
+
+    @include phones {
+        margin-top: 6%;
+    }
 }
+
 .slide__price {
     font-family: $font_gagalin;
     color: $color_orange;
     font-size: rem(72px);
     letter-spacing: rem(-1.79px);
     line-height: rem(28.08px);
+
+    @include phones {
+        font-size: 3.8rem;
+    }
 }
+
 .slide__price-number {
     font-size: rem(30px);
     font-weight: 400;
     letter-spacing: rem(-0.75px);
+
+    @include phones {
+        font-size: 1.8rem;
+    }
 }
+
 .slide__button {
     vertical-align: super;
 }

@@ -11,6 +11,12 @@ $(document).ready(function() {
     $('.carousel__btn--prev').click(function() {
         prevSlide();
     });
+
+    $('.hamburger').click(function(e){
+        e.preventDefault();
+        $('.hamburger').toggleClass('hamburger--pressed');
+        $(".nav").slideToggle(500);
+    });
 });
 
 
