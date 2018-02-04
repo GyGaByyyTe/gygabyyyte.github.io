@@ -51,6 +51,13 @@
     height: rem(90px);
     background-color: rgba($color: $color_orange, $alpha: 0.4);
     border-radius: 5%;
+    cursor: pointer;
+
+    @include hover-anim-one(background-color, rgba($color: $color_orange, $alpha: 1));
+
+    &:hover .slide__table {
+        left: 100%;
+    }
 
     @include tablets {
         left: 4%;
@@ -110,6 +117,68 @@
 
     @include phones {
         font-size: 1.1rem;
+    }
+}
+
+.slide__table {
+    position: absolute;
+    top: 0;
+    background-color: $color_white;
+    opacity: 0.9;
+    border-radius: rem(5px);
+    padding: 1.2rem;
+    left: -1000%;
+
+    &:hover {
+        cursor: initial;
+        user-select: text;
+    }
+}
+
+.slide__table-cell {
+    white-space: nowrap;
+    color: $color_dark;
+    font-size: rem(14px);
+    font-weight: 600;
+
+    &:first-child {
+        display: inline-block;
+        width: 4rem;
+    }
+
+    &--weight {
+        text-align: right;
+        padding-left: 3.8rem;
+        font-weight: 400;
+    }
+}
+
+.slide__table-icon {
+    width: 2.8rem;
+    height: 2.8rem;
+
+    &--beef {
+        fill: $color_orange;
+    }
+
+    &--buns {
+        fill: $color_yellow;
+    }
+
+    &--salad {
+        fill: $color_green;
+    }
+
+    &--sauce {
+        fill: $color_orange;
+    }
+
+    &--cucumber {
+        fill: $color_green;
+    }
+
+    &--cheese {
+        fill: $color_yellow;
     }
 }
 

@@ -371,7 +371,14 @@ a {
   width: 5.625rem;
   height: 5.625rem;
   background-color: rgba(228, 80, 40, 0.4);
-  border-radius: 5%; }
+  border-radius: 5%;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  .slide__composition:hover {
+    background-color: #e45028; }
+  .slide__composition:hover .slide__table {
+    left: 100%; }
   @media screen and (max-width: 768px) {
     .slide__composition {
       left: 4%; } }
@@ -424,6 +431,50 @@ a {
   @media screen and (max-width: 480px) {
     .slide_composition-text {
       font-size: 1.1rem; } }
+
+.slide__table {
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  opacity: 0.9;
+  border-radius: 0.3125rem;
+  padding: 1.2rem;
+  left: -1000%; }
+  .slide__table:hover {
+    cursor: initial;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text; }
+
+.slide__table-cell {
+  white-space: nowrap;
+  color: #2f3234;
+  font-size: 0.875rem;
+  font-weight: 600; }
+  .slide__table-cell:first-child {
+    display: inline-block;
+    width: 4rem; }
+  .slide__table-cell--weight {
+    text-align: right;
+    padding-left: 3.8rem;
+    font-weight: 400; }
+
+.slide__table-icon {
+  width: 2.8rem;
+  height: 2.8rem; }
+  .slide__table-icon--beef {
+    fill: #e45028; }
+  .slide__table-icon--buns {
+    fill: #f9b43b; }
+  .slide__table-icon--salad {
+    fill: #8bc03f; }
+  .slide__table-icon--sauce {
+    fill: #e45028; }
+  .slide__table-icon--cucumber {
+    fill: #8bc03f; }
+  .slide__table-icon--cheese {
+    fill: #f9b43b; }
 
 .slide__nutrition {
   position: absolute;
