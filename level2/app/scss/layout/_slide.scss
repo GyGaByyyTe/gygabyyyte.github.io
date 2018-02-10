@@ -49,6 +49,8 @@
     left: 0;
     width: rem(90px);
     height: rem(90px);
+    // width: 15.5%;
+    // height: 14%;
     background-color: rgba($color: $color_orange, $alpha: 0.4);
     border-radius: 5%;
     cursor: pointer;
@@ -57,6 +59,7 @@
 
     &:hover .slide__table {
         left: 100%;
+        display: table;
     }
 
     @include tablets {
@@ -121,6 +124,7 @@
 }
 
 .slide__table {
+    display: none;
     position: absolute;
     top: 0;
     background-color: $color_white;
@@ -188,6 +192,8 @@
     left: 0;
     width: rem(60px);
     height: rem(80px);
+    // width: 10.5%;
+    // height: 12.5%;    
     opacity: .5;
 
     @include tablets {

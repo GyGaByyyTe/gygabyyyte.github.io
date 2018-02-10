@@ -1,9 +1,12 @@
 .contacts {
+    background-image: url("../img/backgrounds/section_8_bg.jpg");
+}
+
+.contacts__content {
     @include section-prop;
 
     display: flex;
     flex-direction: column;
-    background-image: url("../img/backgrounds/section_8_bg.jpg");
 }
 
 .contacts__address {
@@ -16,6 +19,7 @@
     @include tablets {
         padding-bottom: rem(8px);
     }
+
 
     @include phones {
         padding: 0.8rem 0;
@@ -55,6 +59,7 @@
 .contacts__icon {
     vertical-align: middle;
     fill: rgba($color_dark, 0.9);
+
     // width: rem(20px);
     // height: rem(20px);
     width: 1.3rem;

@@ -50,12 +50,26 @@
     display: flex;
 
     &--active {
+
+        @include phones {
+            position: absolute;
+            bottom: 0;
+            top: 0;
+
+        }
+
         .menu__item-header {
             color: $color_yellow;
         }
 
         .menu__item-content {
-            width: 100%;
+            width: 76vw;
+
+            @include phones {
+                width: 92vw;
+                z-index: 10;
+            }
+
         }
     }
 }
@@ -79,7 +93,7 @@
     }
 
     @include tablets {
-        width: 5.35rem;
+        width: 8vw;
     }
 }
 
@@ -93,11 +107,22 @@
     transform-origin: 0 0;
     transform: rotate(-90deg);
     white-space: nowrap;
+
+    @include tablets {
+        left: 10%;
+    }
+
+    @include phones {
+        left: 0;
+    }
 }
 
 .menu__item-content {
     width: 0;
     background-color: rgba($color: $color-dark, $alpha: 0.9);
+
+    transition: all 0.5s ease-in-out;
+
 }
 
 .menu__item-desc {

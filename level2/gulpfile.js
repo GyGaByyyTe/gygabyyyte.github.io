@@ -46,7 +46,8 @@ var newer = require("gulp-newer");
   var css_dest = "app/css";
 
   var vendor_css_src = [
-    "app/libs/normalize-css/normalize.css"
+    "app/libs/normalize-css/normalize.css",
+    "app/libs/fullPage.js-master/dist/jquery.fullpage.css"
   ];
   var vendor_css_res = "vendor.min.css";
   var vendor_css_dest = "app/css";
@@ -84,7 +85,8 @@ var newer = require("gulp-newer");
 
 // --------------------------------------------- JavaScript JS ФОРМИРОВАНИЕ
   var vendor_js_src = [
-    "app/libs/jquery/dist/jquery.min.js"
+    "app/libs/jquery/dist/jquery.js",
+    "app/libs/fullpage-js-master/dist/jquery.fullpage.min.js"
   ];  
   var vendor_js_res = "vendor.min.js";
   var vendor_js_dest = "app/js";
@@ -96,8 +98,10 @@ var newer = require("gulp-newer");
   // Таск для объединения и минификации JS-файлов внешних библиотек
     gulp.task("vendorJS", function () {
       return gulp.src(vendor_js_src)
+      .pipe(debug({title:"js"}))
         .pipe(concat(vendor_js_res))
-        .pipe(uglify())
+
+        // .pipe(uglify())
         .pipe(gulp.dest(vendor_js_dest))
     });
 

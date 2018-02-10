@@ -10,6 +10,19 @@
 
 .global-menu__item {
     margin-bottom: rem(5px);
+
+    &.active {
+
+        .global-menu__link {
+            &::after {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    }
 }
 
 .global-menu__link {
