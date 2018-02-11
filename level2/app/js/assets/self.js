@@ -46,63 +46,13 @@ $(document).ready(function () {
     $('#fullpage').fullpage({
         //Навигация
         menu: '#global-menu',
-        // lockAnchors: false,
         anchors:['fp-best','fp-we', 'fp-burgers', 'fp-team', 
         'fp-menu', 'fp-reviews','fp-order', 'fp-contacts'],
-        // navigation: false,
-        // navigationPosition: 'right',
-        // navigationTooltips: ['firstSlide', 'secondSlide'],
-        // showActiveTooltip: false,
-        // slidesNavigation: false,
-        // slidesNavPosition: 'bottom',
-
         //Скроллинг
-        // css3: true,
-        // scrollingSpeed: 700,
-        // autoScrolling: true,
-        // fitToSection: true,
-        // fitToSectionDelay: 1000,
-        // scrollBar: false,
-        // easing: 'easeInOutCubic',
-        // easingcss3: 'ease',
-        // loopBottom: false,
-        // loopTop: false,
-        // loopHorizontal: true,
-        // continuousVertical: false,
-        // continuousHorizontal: false,
-        // scrollHorizontally: false,
-        // interlockedSlides: false,
-        // dragAndMove: false,
-        // offsetSections: false,
-        // resetSliders: false,
-        // fadingEffect: false,
-        // normalScrollElements: '#element1, .element2',
-        // scrollOverflow: false,
-        // scrollOverflowReset: false,
-        // scrollOverflowOptions: null,
-        // touchSensitivity: 15,
-        // normalScrollElementTouchThreshold: 5,
-        // bigSectionsDestination: null,
-
-        //Дизайн
-        // controlArrows: true,
-        // verticalCentered: true,
-        // sectionsColor : ['#ccc', '#fff'],
-        // paddingTop: '3em',
-        // paddingBottom: '10px',
-        // fixedElements: '#header, .footer',
-        // responsiveWidth: 0,
-        // responsiveHeight: 0,
-        // responsiveSlides: false,
-        // parallax: false,
-        // parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
-
+        scrollingSpeed: 700,
         //Настроить селекторы
         sectionSelector: '.section',
-        slideSelector: '.fp-slide',
-
-        lazyLoading: true,
-
+        slideSelector: '.fp-slide'
     });
 
     var array_links = ['best','we','burgers','team','menu','reviews','order','contacts',];
@@ -114,6 +64,40 @@ $(document).ready(function () {
             $.fn.fullpage.moveTo(j+1);
         });
     }   
+
+    //overlay reviews 
+    const reviews__container = $(".reviews__container");
+    const template = $("#overlayTemplate");
+
+    function openOverlay(header_content, text_content) {
+
+      const overlayElement = document.createElement("div");
+      overlayElement.classList.add("overlay");
+    
+      overlayElement.innerHTML = template.get(0).innerHTML; 
+    
+      const closeElement = overlayElement.querySelector(".overlay__close");
+      closeElement.addEventListener("click", function(e) {
+          e.preventDefault();
+          reviews__container.get(0).removeChild(overlayElement);
+      });
+    
+      const header_contentElement = overlayElement.querySelector(".overlay__header");    
+      header_contentElement.innerHTML = header_content;
+
+      const text_contentElement = overlayElement.querySelector(".overlay__text");
+      text_contentElement.innerHTML = text_content;      
+    
+      return overlayElement;
+    }
+     
+    $('.button--more').click(function(e){
+        e.preventDefault();
+        const header_content = e.currentTarget.parentElement.children[0].innerHTML;
+        const text_content = e.currentTarget.parentElement.children[1].innerHTML;
+        const overlay = openOverlay(header_content,text_content);
+        reviews__container.get(0).append(overlay);
+    });
 
 });
 
