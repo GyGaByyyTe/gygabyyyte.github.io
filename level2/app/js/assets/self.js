@@ -46,8 +46,8 @@ $(document).ready(function () {
     $('#fullpage').fullpage({
         //Навигация
         menu: '#global-menu',
-        anchors:['fp-best','fp-we', 'fp-burgers', 'fp-team', 
-        'fp-menu', 'fp-reviews','fp-order', 'fp-contacts'],
+        anchors: ['fp-best', 'fp-we', 'fp-burgers', 'fp-team',
+            'fp-menu', 'fp-reviews', 'fp-order', 'fp-contacts'],
         //Скроллинг
         scrollingSpeed: 700,
         //Настроить селекторы
@@ -55,15 +55,15 @@ $(document).ready(function () {
         slideSelector: '.fp-slide'
     });
 
-    var array_links = ['best','we','burgers','team','menu','reviews','order','contacts',];
+    var array_links = ['best', 'we', 'burgers', 'team', 'menu', 'reviews', 'order', 'contacts',];
 
-    for (var i=0;i<array_links.length;i++) {
+    for (var i = 0; i < array_links.length; i++) {
         const j = i;
-        $("a[href='#"+array_links[j]+"']").click(function(e){
+        $("a[href='#" + array_links[j] + "']").click(function (e) {
             e.preventDefault();
-            $.fn.fullpage.moveTo(j+1);
+            $.fn.fullpage.moveTo(j + 1);
         });
-    }   
+    }
 
     //overlay reviews 
     const reviews__container = $(".reviews__container");
@@ -71,33 +71,61 @@ $(document).ready(function () {
 
     function openOverlay(header_content, text_content) {
 
-      const overlayElement = document.createElement("div");
-      overlayElement.classList.add("overlay");
-    
-      overlayElement.innerHTML = template.get(0).innerHTML; 
-    
-      const closeElement = overlayElement.querySelector(".overlay__close");
-      closeElement.addEventListener("click", function(e) {
-          e.preventDefault();
-          reviews__container.get(0).removeChild(overlayElement);
-      });
-    
-      const header_contentElement = overlayElement.querySelector(".overlay__header");    
-      header_contentElement.innerHTML = header_content;
+        const overlayElement = document.createElement("div");
+        overlayElement.classList.add("overlay");
 
-      const text_contentElement = overlayElement.querySelector(".overlay__text");
-      text_contentElement.innerHTML = text_content;      
-    
-      return overlayElement;
+        overlayElement.innerHTML = template.get(0).innerHTML;
+
+        const closeElement = overlayElement.querySelector(".overlay__close");
+        closeElement.addEventListener("click", function (e) {
+            e.preventDefault();
+            reviews__container.get(0).removeChild(overlayElement);
+        });
+
+        const header_contentElement = overlayElement.querySelector(".overlay__header");
+        header_contentElement.innerHTML = header_content;
+
+        const text_contentElement = overlayElement.querySelector(".overlay__text");
+        text_contentElement.innerHTML = text_content;
+
+        return overlayElement;
     }
-     
-    $('.button--more').click(function(e){
+
+    $('.button--more').click(function (e) {
         e.preventDefault();
         const header_content = e.currentTarget.parentElement.children[0].innerHTML;
         const text_content = e.currentTarget.parentElement.children[1].innerHTML;
-        const overlay = openOverlay(header_content,text_content);
+        const overlay = openOverlay(header_content, text_content);
         reviews__container.get(0).append(overlay);
     });
+
+    //form action
+    $('#order-form').on('submit', submitForm);
+
+    // map realization
+    ymaps.ready(initMap);
+    var myMap;
+
+    function initMap() {
+
+        ymaps.geolocation.get().then(function (res) {
+
+            var $container = $('#map'),
+                bounds = res.geoObjects.get(0).properties.get('boundedBy'),
+                mapState = ymaps.util.bounds.getCenterAndZoom(
+                    bounds,
+                    [$container.width() / 10, $container.height() / 10]
+                );
+            mapState.controls = ['zoomControl', 'rulerControl', 'searchControl'];
+            myMap = new ymaps.Map('map', mapState);
+            myMap.behaviors.disable('scrollZoom');
+
+        }, function (e) {
+            console.log(e);
+        });
+
+    }
+
 
 });
 
@@ -148,3 +176,39 @@ function updateSlide() {
         });
     }
 }
+
+function submitForm (ev) {
+    ev.preventDefault();
+    
+    var form = $(ev.target),
+        data = form.serialize(),
+        url = form.attr('action'),
+        type = form.attr('method');
+
+    ajaxForm(form).done(function(msg) {
+        var mes = msg.mes,
+            status = msg.status;
+        
+        if (status === 'OK') {
+            form.append('<p class="success">' + mes + '</p>');
+        } else{
+            form.append('<p class="error">' + mes + '</p>');
+        }
+    }).fail(function(jqXHR, textStatus) {
+        alert("Request failed: " + textStatus);
+    });
+
+};
+
+// Универсальная функция для работы с формами
+var ajaxForm = function (form) {
+    var data = form.serialize(),
+        url = form.attr('action');
+    
+    return $.ajax({
+        type: 'POST',
+        url: url,
+        dataType : 'JSON',
+        data: data
+    })
+};

@@ -697,42 +697,42 @@
             <section id="order" class="section order">
                 <div class="container container--order">
                     <h2 class="order__title section-title section-title_color_yellow ">Закажите доставку</h2>
-                    <form class="order__form form">
+                    <form action="server.php" method="post" class="order__form form" id="order-form">
                         <div class="form__elem">
                             <div class="form__column">
                                 <div class="form__row">
                                     <label class="form__block">
                                         <span class="form__block-title">Имя</span>
-                                        <input type="text" class="form__block-input" required>
+                                        <input type="text" name="user-name" class="form__block-input" required>
                                     </label>
                                     <label class="form__block">
                                         <span class="form__block-title">Телефон</span>
-                                        <input type="text" class="form__block-input" required>
+                                        <input type="text" name="user-phone" class="form__block-input" required>
                                     </label>
                                 </div>
                                 <div class="form__row">
                                     <label class="form__block">
                                         <span class="form__block-title">Улица</span>
-                                        <input type="text" class="form__block-input" required>
+                                        <input type="text" name="user-street" class="form__block-input" required>
                                     </label>
                                 </div>
                                 <div class="form__row">
                                     <label class="form__block">
                                         <span class="form__block-title">Дом</span>
-                                        <input type="text" class="form__block-input" required>
+                                        <input type="text" name="user-house" class="form__block-input" required>
                                     </label>
                                     <label class="form__block">
                                         <span class="form__block-title">Корпус</span>
-                                        <input type="text" class="form__block-input" required>
+                                        <input type="text" name="user-house-part" class="form__block-input">
                                     </label>
                                     <label class="form__block">
                                         <span class="form__block-title">Квартира</span>
-                                        <input type="text" class="form__block-input" required>
+                                        <input type="text" name="user-appartment" class="form__block-input" required>
                                     </label>
                                     <!-- временно отключается через CSS на мобилках -->
                                     <label class="form__block form__block--phones_disabled">
                                         <span class="form__block-title">Этаж</span>
-                                        <input type="text" class="form__block-input">
+                                        <input type="text" name="user-floor" class="form__block-input">
                                     </label>
                                 </div>
                             </div>
@@ -740,18 +740,18 @@
                                 <div class="form__row">
                                     <label class="form__block">
                                         <span class="form__block-title">Комментарий</span>
-                                        <textarea cols="30" rows="4" class="form__block-area"></textarea>
+                                        <textarea cols="30" rows="4" name="user-comment" class="form__block-area"></textarea>
                                     </label>
                                 </div>
                                 <div class="form__row form__row--phones_text_center">
                                     <div class="form__custom">
                                         <label class="form__custom-radiobutton">
-                                            <input class="form__custom-radio-real" type="radio" name="radio-test">
+                                            <input class="form__custom-radio-real" type="radio" name="pay-option" value="cash">
                                             <span class="form__radio-custom"></span>
                                             <span class="form__block-title">Потребуется сдача</span>
                                         </label>
                                         <label class="form__custom-radiobutton">
-                                            <input class="form__custom-radio-real" type="radio" checked name="radio-test">
+                                            <input class="form__custom-radio-real" type="radio" checked name="pay-option" value="card">
                                             <span class="form__radio-custom"></span>
                                             <span class="form__block-title">Оплата по карте</span>
                                         </label>
@@ -759,7 +759,7 @@
                                 </div>
                                 <div class="form__row form__row--phones_text_center">
                                     <label class="form__custom-checkbox">
-                                        <input class="form__custom-checkbox-real" type="checkbox" name="chbox-test">
+                                        <input class="form__custom-checkbox-real" type="checkbox" name="dont-disturb">
                                         <span class="form__checkbox-custom"></span>
                                         <span class="form__block-title">Не перезванивать</span>
                                     </label>
@@ -777,7 +777,7 @@
             <section id="contacts" class="section contacts">
                 <div class="contacts__content">
                     <h2 class="contacts__title hidden">Контакты</h2>
-                    <div class="map"></div>
+                    <div id="map" class="map"></div>
                     <footer class="footer">
                         <div class="container container--contacts">
                             <div class="footer__left">
@@ -849,6 +849,7 @@
           </div>
         </div>
     </script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>       
     <script src="js/vendor.min.js"></script>
     <script src="js/self.min.js"></script>
 </body>
