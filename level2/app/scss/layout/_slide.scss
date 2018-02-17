@@ -17,12 +17,12 @@
     @include tablets {
         width: 100%;
         height: 50%;
-        padding-top: 15%;
+        padding-top: 5%;
     }
 
 
     @include phones {
-        padding-top: 25%;
+        // padding-top: 25%;
         height: 54%;
     }
 }
@@ -240,7 +240,8 @@
     @include tablets {
         text-align: center;
         width: 100%;
-        padding: 5% 0 0 0;
+        // padding: 5% 0 0 0;
+        // padding: 0;
     }
 
 
@@ -255,6 +256,8 @@
 
     @include tablets {
         width: 100%;
+        font-size: 3rem;
+        line-height: 3rem;
     }
 }
 
@@ -269,8 +272,8 @@
         width: 100%;
         font-size: 0.93rem;
         line-height: 1.598rem;
+        margin-top: 3%;
     }
-
 
     @include phones {
         margin: 6% auto 0;
@@ -283,6 +286,10 @@
 .slide__order {
     margin-top: 9%;
     vertical-align: middle;
+
+    @include tablets {
+        margin-top: 4%;
+    }
 
     @include phones {
         margin-top: 6%;
@@ -311,6 +318,9 @@
     }
 }
 
+.slide__link {
+    display: inline-block;
+}
 .slide__button {
     vertical-align: super;
 }

@@ -24,12 +24,11 @@
 
     @include tablets {
         width: 75%;
-        height: 78%;
+        height: 90%;
     }
 
     @include phones {
         width: 100%;
-        height: 78%;
     }
 }
 

@@ -3,8 +3,7 @@
 }
 
 .contacts__content {
-    @include section-prop;
-
+    height: 100%;
     display: flex;
     flex-direction: column;
 

@@ -49,10 +49,8 @@
 
     if ($mail) {
         $data['status'] = "OK";
-        $data['mes'] = "Письмо успешно отправлено";
     }else{
         $data['status'] = "NO";
-        $data['mes'] = "На сервере произошла ошибка";
     }
 
     echo json_encode($data);

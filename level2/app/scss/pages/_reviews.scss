@@ -9,17 +9,6 @@
     position: relative;
     width: 100%;
     height: 100%;
-
-    @include tablets {
-        min-height: 1024px;
-
-        // min-height: 100%;
-    }
-
-
-    @include phones {
-        min-height: 800px;
-    }
 }
 
 .reviews__list {

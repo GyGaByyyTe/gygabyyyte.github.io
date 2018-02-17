@@ -90,18 +90,6 @@ a {
     position: relative;
 
     @include tablets {
-        min-height: 1024px;
-
-        // min-height: 100%;
-    }
-
-
-    @include phones {
-        min-height: 800px;
-    }
-
-
-    @include tablets {
         padding-right: 2.5%;
         padding-left: 3.5%;
     }
@@ -125,7 +113,6 @@ a {
     @include tablets {
         padding-bottom: 9rem;
     }
-
 
     @include phones {
         padding-top: 7rem;
@@ -155,7 +142,7 @@ a {
     padding-bottom: 13.2%;
 
     @include tablets {
-        padding: 9rem 0;
+        padding: 10% 0;
         justify-content: flex-start;
     }
 

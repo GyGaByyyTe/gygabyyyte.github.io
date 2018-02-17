@@ -1,6 +1,11 @@
 .footer {
+    background-image: url("../img/backgrounds/section_8_bg.jpg");
     padding-top: rem(5px);
     padding-bottom: rem(10px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .footer__left {

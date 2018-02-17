@@ -18,4 +18,31 @@
     }
 }
 
+.order__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($color: $color_dark, $alpha: 0.92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.order__popup {
+    position: relative;
+    width: 30%;
+    background-color: $color_white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3%;
+}
+.order__popup-header {
+    color: #2f3234;
+    font-size: rem(14px);
+    font-weight: 300;
+    margin-bottom: 7%;
+}
+
 

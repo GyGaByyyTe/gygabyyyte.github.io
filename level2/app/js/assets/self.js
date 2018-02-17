@@ -205,19 +205,29 @@ function updateSlide() {
 function submitForm(ev) {
     ev.preventDefault();
 
+    var overlay = $('.order__overlay');
+    var overlayText = $('.order__popup-header');
+    var overlayClose = $('.order__popup-close');
+
     var form = $(ev.target),
         data = form.serialize(),
         url = form.attr('action'),
         type = form.attr('method');
 
     ajaxForm(form).done(function (msg) {
+
+        overlay.css({'display':'flex'});
+        overlayClose.on('click', function(e){
+            overlay.css({'display':'none'});
+        });
+
         var mes = msg.mes,
             status = msg.status;
 
         if (status === 'OK') {
-            form.append('<p class="success">' + mes + '</p>');
+            overlayText.get(0).innerHTML = 'Сообщение отправлено';
         } else {
-            form.append('<p class="error">' + mes + '</p>');
+            overlayText.get(0).innerHTML = 'Произошла ошибка';
         }
     }).fail(function (jqXHR, textStatus) {
         alert("Request failed: " + textStatus);

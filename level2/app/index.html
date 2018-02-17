@@ -208,7 +208,9 @@
                                         <span class="slide__price">500
                                             <span class="slide__price-number">рублей</span>
                                         </span>
-                                        <button class="slide__button button button--order">Заказать</button>
+                                        <a href="#order" class="slide__link">
+                                            <button class="slide__button button button--order">Заказать</button>
+                                        </a>
                                     </div>
                                 </div>
                             </li>
@@ -297,7 +299,9 @@
                                         <span class="slide__price">650
                                             <span class="slide__price-number">рублей</span>
                                         </span>
-                                        <button class="slide__button button button--order">Заказать</button>
+                                        <a href="#order" class="slide__link">
+                                            <button class="slide__button button button--order">Заказать</button>
+                                        </a>
                                     </div>
                                 </div>
                             </li>
@@ -386,7 +390,9 @@
                                         <span class="slide__price">532
                                             <span class="slide__price-number">рублей</span>
                                         </span>
-                                        <button class="slide__button button button--order">Заказать</button>
+                                        <a href="#order" class="slide__link">
+                                            <button class="slide__button button button--order">Заказать</button>
+                                        </a>
                                     </div>
                                 </div>
                             </li>
@@ -475,7 +481,9 @@
                                         <span class="slide__price">350
                                             <span class="slide__price-number">рублей</span>
                                         </span>
-                                        <button class="slide__button button button--order">Заказать</button>
+                                        <a href="#order" class="slide__link">
+                                            <button class="slide__button button button--order">Заказать</button>
+                                        </a>
                                     </div>
                                 </div>
                             </li>
@@ -511,7 +519,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="team__accordeon-item team__accordeon-item--active">
+                        <li class="team__accordeon-item">
                             <a href="#" class="team__item-header">Ричард Джеймс</a>
                             <div class="team__item-content">
                                 <div class="team__item-img" style="background-image:url(img/content/team/team_ava_1.jpg);"></div>
@@ -707,7 +715,7 @@
                                     </label>
                                     <label class="form__block">
                                         <span class="form__block-title">Телефон</span>
-                                        <input type="text" name="user-phone" class="form__block-input" required >
+                                        <input type="text" name="user-phone" class="form__block-input" required>
                                     </label>
                                 </div>
                                 <div class="form__row">
@@ -771,6 +779,12 @@
                             </div>
                         </div>
                     </form>
+                    <div class="order__overlay">
+                        <div class="order__popup">
+                            <p class="order__popup-header">Сообщение отправлено</p>
+                            <div class="order__popup-close button button--order">Закрыть</div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -849,7 +863,7 @@
           </div>
         </div>
     </script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>       
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/vendor.min.js"></script>
     <script src="js/self.min.js"></script>
 </body>

@@ -14,14 +14,14 @@
     width: 100%;
 
     @include tablets {
-        min-height: 1024px;
+        min-height: initial;
         // min-height: 100%;
     }
 
 
-    @include phones {
-        min-height: 800px;
-    }
+    // @include phones {
+    //     min-height: 800px;
+    // }
 }
 
 @mixin font-ubuntu {

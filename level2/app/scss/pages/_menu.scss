@@ -63,10 +63,10 @@
         }
 
         .menu__item-content {
-            width: 76vw;
+            width: 46vw;
 
             @include phones {
-                width: 92vw;
+                width: 88vw;
                 z-index: 10;
             }
 
@@ -93,27 +93,27 @@
     }
 
     @include tablets {
-        width: 8vw;
+        width: 10vw;
+    }
+
+    @include phones {
+        width: 12vw;
     }
 }
 
 .menu__item-header {
     position: absolute;
-    left: 18%;
+    left: 50%;
     top: 94%;
     font-family: $font_gagalin, sans-serif;
     font-size: rem(40px);
     font-weight: 400;
     transform-origin: 0 0;
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) translateY(-50%);
     white-space: nowrap;
 
     @include tablets {
-        left: 10%;
-    }
-
-    @include phones {
-        left: 0;
+        line-height: 2rem;
     }
 }
 
