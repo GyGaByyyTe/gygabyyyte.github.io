@@ -114,11 +114,36 @@ $(document).ready(function () {
                 bounds = res.geoObjects.get(0).properties.get('boundedBy'),
                 mapState = ymaps.util.bounds.getCenterAndZoom(
                     bounds,
-                    [$container.width() / 10, $container.height() / 10]
+                    [$container.width() / 20, $container.height() / 20]
                 );
             mapState.controls = ['zoomControl', 'rulerControl', 'searchControl'];
+            mapState.zoom = 13;
             myMap = new ymaps.Map('map', mapState);
             myMap.behaviors.disable('scrollZoom');
+
+            var deltaCoord = 0.02;
+
+            var myPlacemark1 = new ymaps.Placemark([mapState.center[0] + deltaCoord, mapState.center[1] + deltaCoord], {}, {
+                iconLayout: 'default#image',
+                iconImageHref: './img/icons/map-marker.svg',
+                iconImageSize: [46, 57],
+                iconImageOffset: [-3, -42]
+            }),
+                myPlacemark2 = new ymaps.Placemark([mapState.center[0] - deltaCoord, mapState.center[1] + deltaCoord], {}, {
+                    iconLayout: 'default#image',
+                    iconImageHref: './img/icons/map-marker.svg',
+                    iconImageSize: [46, 57],
+                    iconImageOffset: [-3, -42]
+                }),
+                myPlacemark3 = new ymaps.Placemark([mapState.center[0] + deltaCoord, mapState.center[1] - deltaCoord], {}, {
+                    iconLayout: 'default#image',
+                    iconImageHref: './img/icons/map-marker.svg',
+                    iconImageSize: [46, 57],
+                    iconImageOffset: [-3, -42]
+                });
+            myMap.geoObjects.add(myPlacemark1);
+            myMap.geoObjects.add(myPlacemark2);
+            myMap.geoObjects.add(myPlacemark3);
 
         }, function (e) {
             console.log(e);
@@ -177,24 +202,24 @@ function updateSlide() {
     }
 }
 
-function submitForm (ev) {
+function submitForm(ev) {
     ev.preventDefault();
-    
+
     var form = $(ev.target),
         data = form.serialize(),
         url = form.attr('action'),
         type = form.attr('method');
 
-    ajaxForm(form).done(function(msg) {
+    ajaxForm(form).done(function (msg) {
         var mes = msg.mes,
             status = msg.status;
-        
+
         if (status === 'OK') {
             form.append('<p class="success">' + mes + '</p>');
-        } else{
+        } else {
             form.append('<p class="error">' + mes + '</p>');
         }
-    }).fail(function(jqXHR, textStatus) {
+    }).fail(function (jqXHR, textStatus) {
         alert("Request failed: " + textStatus);
     });
 
@@ -204,11 +229,11 @@ function submitForm (ev) {
 var ajaxForm = function (form) {
     var data = form.serialize(),
         url = form.attr('action');
-    
+
     return $.ajax({
         type: 'POST',
         url: url,
-        dataType : 'JSON',
+        dataType: 'JSON',
         data: data
     })
 };
