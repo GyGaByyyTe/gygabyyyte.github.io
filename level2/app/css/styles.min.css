@@ -154,6 +154,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: static;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1858,17 +1859,23 @@ a {
 
 .order__popup {
   position: relative;
-  width: 30%;
   background-color: #fff;
   border-radius: 5px;
   text-align: center;
   padding: 3%; }
+  @media screen and (max-width: 768px) {
+    .order__popup {
+      padding: 5%; } }
 
 .order__popup-header {
+  white-space: nowrap;
   color: #2f3234;
   font-size: 0.875rem;
   font-weight: 300;
   margin-bottom: 7%; }
+  @media screen and (max-width: 480px) {
+    .order__popup-header {
+      font-size: 1rem; } }
 
 .contacts {
   background-image: url("../img/backgrounds/section_8_bg.jpg"); }

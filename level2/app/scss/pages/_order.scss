@@ -32,17 +32,25 @@
 }
 .order__popup {
     position: relative;
-    width: 30%;
     background-color: $color_white;
     border-radius: 5px;
     text-align: center;
     padding: 3%;
+
+    @include tablets {
+        padding: 5%;
+    }
 }
 .order__popup-header {
+    white-space: nowrap;
     color: #2f3234;
     font-size: rem(14px);
     font-weight: 300;
     margin-bottom: 7%;
+
+    @include phones {
+        font-size: 1rem;
+    }
 }
 
 

@@ -135,6 +135,7 @@ a {
 .container--order {
     @include flex-prop;
 
+    position: static;
     flex-direction: column;
     justify-content: center;
     align-items: center;
