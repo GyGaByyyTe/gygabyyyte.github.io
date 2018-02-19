@@ -27,17 +27,17 @@
 .feature__logo--standart::before {
     width: 27px; 
     height: 31px;
-    background: url('/airplanet/img/icons/css_sprites.png') -62px -10px;
+    background: url('../../img/icons/css_sprites.png') -62px -10px;
 }
 .feature__logo--premium::before {
     width: 32px; 
     height: 32px;
-    background: url('/airplanet/img/icons/css_sprites.png') -10px -10px;
+    background: url('../../img/icons/css_sprites.png') -10px -10px;
 }
 .feature__logo--luxury::before {
     width: 28px; 
     height: 29px;
-    background: url('/airplanet/img/icons/css_sprites.png') -109px -10px;
+    background: url('../../img/icons/css_sprites.png') -109px -10px;
 }
 .feature__header {
     font-size: 11px;

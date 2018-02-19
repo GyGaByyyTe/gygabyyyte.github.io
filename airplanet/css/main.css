@@ -1,20 +1,20 @@
-@import url("/airplanet/css/layout/base.css");
+@import url("layout/base.css");
 
-@import url("/airplanet/css/blocks/logo.css");
-@import url("/airplanet/css/blocks/contacts.css");
-@import url("/airplanet/css/blocks/header.css");
+@import url("blocks/logo.css");
+@import url("blocks/contacts.css");
+@import url("blocks/header.css");
 
-@import url("/airplanet/css/blocks/nav.css");
-@import url("/airplanet/css/blocks/companion.css");
+@import url("blocks/nav.css");
+@import url("blocks/companion.css");
 
-@import url("/airplanet/css/blocks/feature.css");
-@import url("/airplanet/css/blocks/features.css");
+@import url("blocks/feature.css");
+@import url("blocks/features.css");
 
-@import url("/airplanet/css/blocks/feeds.css");
-@import url("/airplanet/css/blocks/pagination.css");
+@import url("blocks/feeds.css");
+@import url("blocks/pagination.css");
 
-@import url("/airplanet/css/blocks/author.css");
-@import url("/airplanet/css/blocks/social.css");
-@import url("/airplanet/css/blocks/footer.css");
+@import url("blocks/author.css");
+@import url("blocks/social.css");
+@import url("blocks/footer.css");
 
 

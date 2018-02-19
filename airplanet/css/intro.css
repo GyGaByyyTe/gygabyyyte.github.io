@@ -1,5 +1,5 @@
 .intro {
-    background-image: url("/airplanet/img/picture/intro_back.jpg");
+    background-image: url("../img/picture/intro_back.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,7 +58,7 @@
     right: 16px;
     width: 17px;
     height: 18px;
-    background: url('/airplanet/img/icons/css_sprites.png') -157px -10px;
+    background: url('../img/icons/css_sprites.png') -157px -10px;
     background-repeat: no-repeat;
 
     transition: background-image .3s;
@@ -68,7 +68,7 @@
     background-color: #1c5bc3;
 }
 .intro__link:hover:after{
-    background: url('/airplanet/img/icons/css_sprites.png') -157px -44px;
+    background: url('../img/icons/css_sprites.png') -157px -44px;
 }
 
 /*!
