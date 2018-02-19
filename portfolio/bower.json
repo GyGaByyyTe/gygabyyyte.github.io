@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "description": "My Portfolio Site",
+  "main": "index.html",
+  "authors": [
+    "GyGaByyyTe <gygabyyyte@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://dev-lebedev.ru/",
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "normalize-css": "normalize.css#^7.0.0"
+  }
+}

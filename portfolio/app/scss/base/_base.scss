@@ -52,12 +52,6 @@ a {
     background-color: #ffffff;
     width: 100%;
     overflow: hidden;
-
-    &:after {
-        content: "";
-        height: $footer-height;
-        display: block;
-    }
 }
 
 .container {
